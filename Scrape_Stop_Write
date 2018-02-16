@@ -42,8 +42,12 @@ para=""
 for w in filtered_sentence:
     para=para+" "+w
 lines=para.split('.')
-wfile = open("testfile.txt","w") 
-wfile.write(str(lines))
+try:
+    wfile = open("testfile.txt","w",encoding='utf-8') 
+    wfile.write(str(lines))
+    print("Write Success")
+except:
+    print("Write failed")
 
 
 # In[ ]:
