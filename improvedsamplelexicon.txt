@@ -4679,88 +4679,229 @@ a	aspiring	0.5	0
 n	hassle	0	0.125
 v	hassle	0	0.125	
 r	nearest	0	0
-a	01667729	0	0	 sequential
-a	00363621	0.5	0.25	 buoyant
-a	02775934	0	0	 monetary#1
-a	01161984	0	0.75	 detrimental#1
-n	07255401	0	0	 banning#1
-a	02331857	0.5	0	 flourishing#1
-a	00364881	0	0.625	dismal#
-a	01945350	0	0.125 unjustified#1
-a	02324781	0.125	0.125	 anaemic#2
-v	00275253	0	0.125	erode#1 
-a	01902468	0	0.25	punitive#1
+a	sequential	0	0	 
+a	buoyant	0.5	0.25	 
+a	monetary	0	0	 
+a	detrimental	0	0.75	 
+n	banning	0	0	 
+a	flourishing	0.5	0	 
+a	dismal	0	0.625	
+a	unjustified	0	0.125 
+a	anaemic	0.125	0.125	 
+v	erode	0	0.125	 
+a	punitive	0	0.25	
 a	short-lived	0	0
-a	02333976	0	0.5	 disappointed#1
-a	00323426	0.25	0.25 conducive#1
-a	02339120	0.375	0.125	 eminent#1
-a	00459330	0.125	0.5	 exposed#2
-a	01805355	0	0.125	 diverted#1
-a	01496021	0	0	 minimal#1
-a	00079629	0	0.125 frightened#1
-r	00118531	0	0.375	 irrespective#1
-a	00881735	0	0.125	 decreased#1
-n	07318133	0	0.75	 downfall#1
-a	01111418	0.5	0	 handsome#2
-a	00935500	0.5	0	 experienced#1
-n	00770270	0	0	 infringement#2
-n	14445226	0	0.625	 bane#1
-a	00556318	0	0.625	 provisional#1
-a	00448314	0	0	 imminent#1
-a	02481012	0	0	split#1 fragmented#1
-a	01947127	0	0.625	 unanswered#1
-n	05829656	0.375	0	 bonus#1
-a	00343700	0.625	0	 avoidable#1
-v	02632353	0	0.125	miss#6 lack#1
-a	00684782	0.375	0.125	deciding#1
-a	02217799	0.5	0.25	twofold#
-a	00523978	0.5	0.25	incomplete#1
-n	00428000	0.25	0.125	 celebration#2
-n	07370410	0	0	 climbing#1
-a	00047786	0	0.625	 addictive#
-a	00190115	0.5	0	 aware#1
-a	00929815	0.25	0	 awaited#1
-a	01764351	0	0	 impeding#1
-a	00735608	0	0.125	 dismantled#1 
-n	02769460	0	0	 backing#2
-n	10536728	0	0.5	 rogue#1
-a	00414919	0	0	 grouped#1
-a	02986218	0	0	 logistic#
-a	01203986	0	0	 ranked#1
-a	00502809	0	0	 impacted#1
-v	01993352	0	0	 impinge#2
-a	01020117	0	0.5	 dipped#1
-a	00186193	0	0.625	 inaccessible#2
-a	01034296	0.5	0	 adopted#1
-n	05919866	0	0	 meaning#2
-a	01277753	0.125	0	 consequential#1
-n	07578363	0	0	 helping#1
-a	01671095	0	0.75	 unorganised#1
-a	01635146	0	0	 constituted#1
-a	02223659	0.25	0.125	 medium-sized#1
-n	07419960	0.125	0.125	 remission#1
-a	00246727	0	0.625	 marred#1
-n	00784083	0	0	 petty#1
-a	02100968	0	0.75	 petty#1
-a	01097690	0	0.125	 stocked#1
-a	01097690	0	0	stocked_with#1 stocked#1
-a	02283356	0	0	 elicited#1
-a	02354897	0	0	 ancillary#1
-a	01878466	0.75	0	proper#1
-a	01643094	0.125	0.5	 untested#2
-a	00744916	0	0.75	 difficult#1
-a	01710543	0	0	 owing#1
-v	02673965	0	0.25	 excel#1
-a	00808011	0.25	0.25	 lackluster#1
-a	00808011	0.25	0.25	 lacklustre#1
-n	00634586	0	0	 counting#1
-a	01003277	0.375	0	 ended#1
-n	07518468	0	0.375	temper#1
-v	00294884	0	0	temper#4
-n	07314838	0	0.5	 calamity#1
-a	00080357	0	0	 panic-struck#1
-a	01358231	0	0	 draining#1
-a	01367431	0.25	0.25	 festive#1
-a	01716227	0.375	0.125	 palatable#1
+a	disappointed	0	0.5	 
+a	conducive	0.25	0.25 
+a	eminent	0.375	0.125	 
+a	exposed	0.125	0.5	 
+a	diverted	0	0.125	 
+a	minimal	0	0	 
+a	frightened	0	0.125 
+r	irrespective	0	0.375	 
+a	decreased	0	0.125	 
+n	downfall	0	0.75	 
+a	handsome	0.5	0	 
+a	experienced	0.5	0	 
+n	infringement	0	0	 
+n	bane	0	0.625	 
+a	provisional	0	0.625	 
+a	imminent	0	0	 
+a	fragmented	0	0	 
+a	unanswered	0	0.625	 
+n	bonus	0.375	0	 
+a	avoidable	0.625	0	 
+v	lack	0	0.125	
+a	deciding	0.375	0.125	
+a	twofold	0.5	0.25	
+a	incomplete	0.5	0.25	
+n	celebration	0.25	0.125	 
+n	climbing	0	0	 
+a	addictive	0	0.625	 
+a	 aware	0.5	0	
+a	awaited	0.25	0	 
+a	impeding	0	0	 
+a	dismantled	0	0.125	  
+n	backing	0	0	 
+n	rogue	0	0.5	 
+a	grouped	0	0	 
+a	logistic	0	0	 
+a	ranked	0	0	 
+a	impacted	0	0	 
+v	impinge	0	0	 
+a	dipped	0	0.5	 
+a	inaccessible	0	0.625	 
+a	adopted	0.5	0	 
+n	meaning	0	0	 
+a	consequential	0.125	0	 
+n	helping	0	0	 
+a	unorganised	0	0.75	 
+a	constituted	0	0	 
+a	medium-sized	0.25	0.125	 
+n	remission	0.125	0.125	 
+a	marred	0	0.625	 
+n	petty	0	0	 
+a	petty	0	0.75	 
+a	stocked	0	0.125	 
+a	stocked	0	0	 
+a	elicited	0	0	 
+a	ancillary	0	0	 
+a	proper	0.75	0	
+a	untested	0.125	0.5	 
+a	difficult	0	0.75	 
+a	owing	0	0	 
+v	excel	0	0.25	 
+a	lackluster	0.25	0.25	 
+a	lacklustre	0.25	0.25	 
+n	counting	0	0	 
+a	ended	0.375	0	 
+n	temper	0	0.375	
+v	temper	0	0	
+n	calamity	0	0.5	 
+a	panic-struck	0	0	 
+a	draining	0	0	 
+a	festive	0.25	0.25	 
+a	palatable	0.375	0.125	 
+n	activating	0.375	0.25	 
+a	activating	0	0	 
+a	heartening	0.5	0	 
+a	deprived	0.125	0.5	 
+a	self-disciplined	0.25	0	 
+a	empowered	0	0	 
+a	durable	0	0	 
+a	mere	0	0.375	 
+n	mere	0	0	
+a	neglected	0	0.375	  
+a	bothersome	0	0.5	
+n	outing	0	0	 
+n	dampening	0	0	 
+n	informing	0	0	 
+a	incredible	0	0	 
+a	garish	0	0.5	 
+a	constraining	0	0	 
+a	harassed	0	0.5	 
+a	risky	0	0.75	 
+a	futile	0	0.5	 
+n	tracking	0	0	 
+a	populous	0	0	 
+a	detailed	0.5	0	
+a	subsidised	0	0	 
+v	deter	0	0	 
+v	exceed	0	0.125	 
+n	booking	0	0	 	
+n	cleaning	0	0	 
+n	predicament	0	0.625	 
+v	abound	0	0	 
+n	regulating	0	0	 	
+a	unprovoked	0	0.625	 
+a	all-inclusive	0.375	0	
+n	forecasting	0	0	 
+a	excellent	1	0	 
+a	eldest	0	0	 
+a	ignored	0	0.375	 
+a	consuming	0.25	0.25	 
+a	unbecoming	0.125	0.75	 
+a	gratifying	0.5	0.25	 
+a	enormous	0	0	 
+n	defeat	0	0.25	 
+v	defeat	0	0	 
+v	brighten	0.125	0	 
+n	clarity	0.375	0.125	 
+v	disparage	0	0.25	 
+n	alarm	0.25	0.375	 
+a	evident	0.5	0	 
+a	chargeable	0	0.25	 
+a	abuzz	0	0	 
+v	exacerbate	0	0.25	 
+a	ironic	0.25	0.5	 
+a	competitive	0.5	0.125	 
+a	laudable	0.625	0	  
+a	bothered	0	0.25	 
+a	ailing	0	0.625	 
+a	horrified	0	0.25	 
+a	infected	0	0.625	 
+a	financial	0.25	0	 
+a	agile	0.375	0	 
+a	infamous	0	0.875	 
+a	adverse	0.25	0.625	
+a	decided	0.5	0	 
+n	settling	0	0.25	 
+n	capability	0.625	0.125	 
+a	additional	0	0	 
+a	constrained	0.125	0.625	 
+a	doubled	0.125	0	 
+a	adapted	0	0	 
+a	meaningless	0.125	0.375	 
+a	inherited	0	0.125	
+a	unglamorous	0.25	0.375	 
+a	unglamourous	0.25	0.375	
+n	dwindling	0	0	 
+a	dwindling	0	0	 
+r	notwithstanding	0.125	0.5	 
+a	contributing	0.25	0.25 
+a	neutralised	0.5	0	
+a	neutralized	0.5	0	
+a	cost-effective	0.125	0	
+a	cost-efficient	0.125	0	
+a	celebrated	0.25	0.125	 
+n	destiny	0	0	 
+r	faster	0	0	 
+a	accusing	0	0.5	 
+a	labelled	0.25	0.125	 
+a	so-called	0	0.25	 
+a	absorbing	0.5	0	 
+a	circular	0	0.125	 
+a	disappointing	0	0.75	 
+a	useful	0	0	 
+a	improving	0.75	0	 
+r	uptown	0	0	
+a	uptown	0	0	
+a	harried	0	0.5	
+a	cancelled	0	0.375	 
+a	cheap	0	0.5	 
+a	exceeding	0.25	0.125	 
+r	fastest	0	0	 
+a	relentless	0	0.125	 
+n	entering	0	0	
+n	arguing	0	0.125	 
+n	interpreting	0	0	 
+a	prevalent	0	0	 
+n	nitty-gritty	0.25	0	 
+a	costly	0	0	 
+a	betting	0.125	0	 
+a	assuming	0	0.5	 
+a	resolved	0	0	 	
+a	enforced	0	0	 
+a	netted	0.125	0	 
+a	lavish	0.375	0.5	 	
+a	problematic	0	0.5	 
+a	problematical	0	0.5	 
+v	confound	0.125	0.625	 
+a	advancing	0	0	 
+a	unfavorable	0.125	0.5	 
+a	unfavourable	0.125	0.5	
+a	unfair	0.375	0.375	 
+a	unjust	0.375	0.375	 
+a	exorbitant	0	0.75	 
+a	affecting	0.5	0.125	 
+n	hindrance	0	0	 
+a	equipped	0.25	0	 
+a	confirming	0	0	 	
+n	excess	0.125	0	 
+a	huge	0	0.125	 
+a	utilised	0	0	
+a	utilized	0	0	
+a	accepted	0.5	0	 
+n	breakup	0	0	 
+a	aggregated	0.25	0.125	 
+
+
+
+
+
+
+
+
+
 
 
