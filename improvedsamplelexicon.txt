@@ -39,7 +39,7 @@ n	power	0.375	0.5
 v	handicapped	0	0.75
 n	fetch	0	0
 n	clause	0	0
-v	reformed	0	0
+a	reformed	0.375	0.125
 a	thereof	0	0
 n	judgment	0	0
 n	superintendent	0	0
@@ -143,7 +143,6 @@ v	reach	0.25	0
 a	air-conditioned	0	0
 n	responsibility	0	0
 n	lane	0	0
-v	kt	0	0
 a	cloud	0	0
 a	corporate	0	0
 a	unexpected	0.125	0.375
@@ -210,7 +209,7 @@ n	james	0	0
 v	subsidy	0	0
 v	allied	0	0
 r	successfully	0.125	0
-r	clearly	0.25	0.25
+r	clearly	0.125	0
 n	hurry	0	0
 v	differentiated	0.125	0
 a	onset	0	0
@@ -260,7 +259,7 @@ n	metrology	0	0
 v	revived	0.5	0.125
 n	grant	0.125	0
 a	stable	0.5	0.125	
-n	stagnation	0	0
+n	stagnation	0	0.5
 v	done	0	0
 n	ground	0	0
 n	recession	0	0
@@ -765,7 +764,8 @@ n	transaction	0	0
 v	threshold	0	0
 a	manufactured	0	0
 a	sad	0.125	0.75
-a	appropriate	0	0
+a	appropriate	0	0.125
+n	appropriate	0	0.125
 n	toothbrush	0	0
 n	bull	0.25	0.125
 r	first	0	0
@@ -807,6 +807,7 @@ a	voluntary	0.375	0.25
 n	repeal	0	0
 a	zonal	0	0
 n	solace	0	0
+v	solace	0.25	0
 v	altered	0	0.125
 n	behalf	0	0
 n	rain	0	0
@@ -946,7 +947,7 @@ n	paul	0	0
 n	ring	0	0
 a	extra	0	0
 n	tier	0	0
-a	chaotic	0	0
+a	chaotic	0	0.125
 n	force	0	0
 n	saturation	0	0
 v	praising	0.5	0.25
@@ -1290,7 +1291,7 @@ n	manner	0.5	0
 v	satisfying	0.25	0
 v	recover	0	0
 a	notice	0.625	0
-v	diminished	0	0
+a	diminished	0	0.125
 n	department	0	0
 n	random	0.125	0
 v	stir	0	0
@@ -1460,7 +1461,7 @@ a	frequent	0.125	0
 n	basis	0.25	0
 n	provision	0	0
 a	final	0	0
-n	obstruction	0	0
+n	obstruction	0	0.125
 n	isaac	0	0
 a	electoral	0	0
 n	appointment	0	0
@@ -1568,7 +1569,7 @@ n	system	0	0
 n	boom	0	0
 a	intense	0.5	0.25
 a	straight	0	0
-n	stifle	0	0
+v	stifle	0	0.25
 n	block	0	0
 r	already	0.125	0
 n	admission	0.5	0
@@ -1610,7 +1611,7 @@ n	push	0	0.125
 n	risk	0	0.625
 v	replenishment	0	0
 a	potential	0	0.25
-n	anomaly	0	0
+n	anomaly	0	0.125
 n	advice	0	0
 n	resort	0	0
 n	tweet	0	0
@@ -1719,7 +1720,7 @@ n	stake	0	0
 n	toothpaste	0	0
 r	strictly	0	0
 a	accommodate	0.125	0
-n	collision	0	0
+n	collision	0	0.125
 n	faq	0	0
 n	incident	0	0.25
 v	encouraged	0.375	0
@@ -1914,7 +1915,8 @@ a	laundry	0	0
 n	certainty	0.125	0.125
 v	satisfied	0.375	0
 a	lesser	0.125	0
-n	joy	0.125	0.125
+n	joy	0.375	0
+n	joy	0.5	0
 n	tariff	0	0
 n	ipo	0	0
 n	locker	0	0
@@ -2015,7 +2017,7 @@ a	serial	0	0
 a	untoward	0.25	0.625
 n	pinch	0	0.25
 v	transmitted	0	0.125
-a	reasonable	0.125	0.125
+a	reasonable	0.5	0
 a	short	0.375	0.5
 v	wondering	0.5	0
 r	quickly	0	0
@@ -2033,7 +2035,7 @@ n	master	0.625	0
 n	ethos	0.125	0
 n	inconvenience	0.125	0.75
 n	mandate	0	0
-n	support	0	0
+v	support	0.375	0
 n	governor	0	0
 n	mind	0.375	0
 a	wellness	0.625	0
@@ -2162,7 +2164,7 @@ a	surprising	0	0.625
 a	upbeat	0.625	0
 n	execution	0	0
 n	custard	0	0
-n	rubbish	0	0
+n	rubbish	0	0.125
 v	segmented	0	0
 n	automation	0	0
 a	previous	0	0
@@ -2205,7 +2207,7 @@ v	fading	0	0.125
 a	pertinent	0.375	0.25
 n	copper	0	0
 n	horizon	0	0
-a	loose	0	0
+a	loose	0	0.25
 v	belonging	0.5	0
 v	ending	0	0
 n	speaker	0	0
@@ -2225,7 +2227,7 @@ n	recall	0	0
 n	desk	0	0
 a	local	0	0
 n	euro	0	0
-v	supported	0	0
+a	supported	0.25	0
 a	preventive	0.25	0.5
 a	enable	0.375	0
 v	acknowledged	0.125	0
@@ -2262,7 +2264,7 @@ n	entertainment	0	0
 n	lifetime	0	0
 a	inform	0	0
 a	rational	0.375	0
-n	inflation	0	0
+n	inflation	0.125	0.375
 v	theatre	0	0
 a	subtle	0	0.625
 n	slippage	0	0
@@ -2339,7 +2341,7 @@ n	sellers	0	0
 n	brokerage	0	0
 n	impediment	0	0.125
 n	dig	0	0
-a	tangible	0	0
+a	tangible	0.5	0
 n	invitation	0.5	0
 a	brilliant	0.375	0.125
 n	service	0	0
@@ -2374,7 +2376,7 @@ n	tantamount	0.125	0
 a	centrum	0	0
 a	conventional	0.375	0.375
 n	stage	0	0
-v	strengthened	0	0
+a	strengthened	0	0
 r	however	0.375	0
 r	simply	0	0
 a	frozen	0	0.75
@@ -2663,7 +2665,7 @@ v	combined	0	0
 r	pointedly	0.125	0
 r	farmer	0	0
 r	ultimately	0	0
-a	attack	0	0
+a	attack	0.125	0.5
 n	vietnam	0	0
 n	tepid	0.25	0.625
 r	surprisingly	0.125	0
@@ -3499,7 +3501,7 @@ a	maiden	0	0
 n	derail	0	0
 n	clueless	0.125	0.5
 n	showroom	0	0
-n	malpractice	0	0
+n	malpractice	0	0.5
 n	deterrent	0.25	0.5
 n	vindication	0	0.125
 n	super	0.125	0
@@ -3786,6 +3788,7 @@ a	top	0	0
 a	tribe	0	0
 a	go-slow	0	0
 n	boost	0	0
+v	boost	0.25	0
 n	pie	0	0
 n	authority	0	0
 n	indulge	0.125	0
@@ -3909,7 +3912,7 @@ n	volt	0	0
 n	liquidate	0	0
 a	upside	0	0
 n	vulnerability	0	0.875
-a	revive	0	0
+v	revive	0.125	0
 n	agra	0	0
 v	staged	0	0.125
 a	unofficial	0	0.75
@@ -4054,7 +4057,7 @@ n	construction	0	0
 n	creative	0.375	0
 v	supposed	0.125	0
 n	plant	0	0
-n	terror	0	0
+n	terror	0	0.375
 n	card	0	0
 a	punish	0	0
 n	ask	0	0
@@ -4156,7 +4159,7 @@ r	mother	0	0
 v	likewise	0	0
 n	bihar	0	0
 n	interpretation	0	0
-n	progress	0	0
+n	progress	0.125	0
 n	correction	0.25	0.125
 v	paving	0	0
 n	chocolate	0	0
@@ -4209,7 +4212,7 @@ n	estimation	0.5	0
 a	plausible	0.5	0
 n	view	0	0
 a	old	0	0
-n	hardening	0	0
+n	hardening	0	0.125
 a	edible	0.25	0
 a	healthy	0.75	0
 a	cleaner	0	0
@@ -4377,7 +4380,7 @@ a	open	0	0
 n	approach	0	0
 n	nemesis	0	0.625
 v	dragging	0.125	0.5
-n	gainer	0	0
+n	gainer	0.125	0
 n	reverse	0.125	0
 v	alpha	0	0
 r	indeed	0	0
