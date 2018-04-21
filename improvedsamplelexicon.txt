@@ -31,7 +31,7 @@ n	technology	0	0
 n	crore	0	0
 a	healthcare	0.25	0
 n	analyst	0	0
-n	reward	0	0
+n	reward	0.625	0
 v	mounting	0	0
 v	unloading	0	0.25
 a	operate	0	0
@@ -492,7 +492,6 @@ n	challenge	0	0
 v	furnished	0	0
 n	relationship	0	0
 a	discouraging	0	0.625	
-v	discouraging	0.25	0.25
 v	remain	0	0
 a	usher	0	0
 n	society	0	0
@@ -877,7 +876,7 @@ a	react	0	0
 n	indicator	0.125	0
 n	retrospective	0	0
 v	billed	0	0
-n	crisis	0	0
+n	crisis	0.25	0.375
 n	northeast	0	0
 a	worrisome	0.25	0.5
 n	greece	0	0
@@ -908,7 +907,7 @@ n	article	0	0
 a	incentive	0	0
 n	space	0	0
 n	couple	0	0
-a	unlikely	0	0
+a	unlikely	0	0.5
 n	hike	0	0.25
 v	shutting	0	0
 a	ride	0	0
@@ -917,7 +916,7 @@ n	hope	0.25	0
 v	pleased	0.625	0
 v	clearing	0	0
 n	charcoal	0	0
-v	shut	0	0
+v	shut	0	0.375
 n	person	0	0
 a	optimistic	0.5	0.25
 a	oral	0	0
@@ -1022,7 +1021,7 @@ a	critical	0	0.5
 n	ballet	0	0
 r	actually	0	0
 v	crossed	0	0
-v	succeeding	0	0
+a	succeeding	0	0.125
 a	few	0	0
 r	away	0	0
 a	maharashtra	0	0
@@ -1078,7 +1077,7 @@ n	guide	0	0
 a	specific	0	0
 n	firm	0.875	0
 r	marginally	0.25	0.125
-v	discourage	0	0
+v	discourage	0.125	0.5
 a	form	0	0
 n	street	0	0
 n	punjab	0	0
@@ -1086,7 +1085,7 @@ v	lingerie	0	0
 v	manufacturing	0	0
 r	ore	0	0
 n	eyes	0.5	0.25
-n	loss	0	0
+n	loss	0	0.25
 n	loan	0	0
 v	absorbed	0	0
 v	spelling	0.125	0
@@ -1215,7 +1214,7 @@ n	apologize	0	0.625
 v	pudding	0	0
 n	deal	0	0
 n	aim	0	0
-a	unbelievable	0	0
+a	unbelievable	0	0.5
 n	begin	0	0
 v	accused	0	0
 r	particularly	0	0
@@ -1249,7 +1248,7 @@ v	going	0	0.5
 a	amazon	0	0
 n	pressure	0	0
 v	illustrate	0	0
-a	hamper	0	0
+v	hamper	0	0.375
 n	fight	0	0
 n	confirm	0	0
 r	principally	0	0
@@ -1338,7 +1337,7 @@ n	cable	0	0
 n	thrust	0	0
 n	feed	0	0
 r	sometimes	0	0
-a	right	0	0
+a	right	0.625	0
 a	full	0	0
 r	urgently	0.125	0.125
 v	dubai	0	0
@@ -1369,7 +1368,7 @@ n	indication	0.125	0
 n	development	0	0
 n	horde	0	0
 n	file	0	0
-n	sham	0	0
+n	sham	0.125	0.5
 n	profits	0	0
 v	agriculture	0	0
 n	conveyance	0	0
@@ -1418,7 +1417,7 @@ a	fulfilment	0	0
 n	wholesaler	0	0
 n	marble	0	0
 v	opposing	0.5	0.5
-n	load	0	0
+v	load	0	0.375
 v	accelerated	0	0
 a	inadvertent	0	0.125
 n	lorry	0	0
@@ -1498,7 +1497,7 @@ n	distinction	0	0.25
 a	duty-free	0	0.125
 n	consensus	0	0
 n	briefly	0	0
-n	bump	0	0
+v	bump	0	0.375
 n	mitigate	0	0.5
 a	evergreen	0	0
 v	rushing	0	0
@@ -1545,7 +1544,7 @@ v	existing	0.125	0
 r	digitally	0	0
 v	marketing	0	0
 v	burdened	0	0
-n	inspiration	0	0
+n	inspiration	0.375	0
 n	businessmen	0	0
 v	spa	0.125	0
 a	driven	0.375	0
@@ -1560,7 +1559,7 @@ v	prescribed	0.125	0
 v	sweetened	0	0
 v	saved	0	0.75
 a	fluctuating	0	0.25
-a	upset	0	0
+a	upset	0	0.875
 n	staff	0	0
 n	garner	0	0
 a	logistical	0	0
@@ -1593,7 +1592,8 @@ v	specify	0	0
 a	inclusive	0	0
 n	join	0	0
 a	casual	0	0.625
-a	corrupt	0.5	0.5
+a	corrupt	0	0.375
+v	corrupt	0	0.25
 n	plastic	0	0
 a	numerous	0	0.125
 n	batch	0	0
@@ -1621,7 +1621,8 @@ a	tricky	0.375	0.375
 n	hardship	0	0.5
 v	posting	0	0
 n	consumer	0	0
-n	benefit	0	0
+n	benefit	0.375	0
+v	benefit	0.375	0
 n	officer	0	0
 n	alter	0	0
 n	utmost	0.25	0
@@ -1672,7 +1673,7 @@ n	blood	0.375	0.375
 n	hr	0	0
 n	deputy	0	0
 n	audit	0	0
-v	onslaught	0	0
+n	onslaught	0	0.75
 a	free	0	0.625
 n	highlight	0.125	0
 n	brother	0	0
@@ -1978,7 +1979,7 @@ n	pull	0	0.375
 a	effective	0.5	0
 n	sense	0.25	0
 r	carefully	0	0
-a	convenient	0	0
+a	convenient	0.625	0.25
 a	urban	0	0
 n	wrongful	0.125	0.75
 v	accumulated	0	0
@@ -2083,7 +2084,7 @@ a	unscrupulous	0	0.625
 v	stopping	0	0
 a	singular	0	0
 a	average	0	0
-a	stall	0	0
+n	stall	0	0.125
 n	conclusion	0	0
 a	synthetic	0	0
 n	bellwether	0	0
@@ -2166,7 +2167,7 @@ v	segmented	0	0
 n	automation	0	0
 a	previous	0	0
 a	joint	0	0
-n	acumen	0	0
+n	acumen	0.5	0
 v	rush	0.125	0.125
 a	resilient	0.25	0
 n	index	0	0
@@ -2265,7 +2266,7 @@ n	inflation	0	0
 v	theatre	0	0
 a	subtle	0	0.625
 n	slippage	0	0
-r	downward	0	0
+r	downward	0	0.125
 v	eggs	0	0
 n	tab	0	0
 n	cause	0	0
@@ -2293,7 +2294,7 @@ a	perplexed	0	0.75
 n	handset	0	0
 a	instant	0.25	0.375
 n	premium	0.75	0
-n	appreciation	0	0
+n	appreciation	0.5	0
 a	january	0	0
 n	council	0	0
 a	fatal	0	0.375
@@ -2336,7 +2337,7 @@ v	judge	0.25	0.25
 a	junior	0	0.25
 n	sellers	0	0
 n	brokerage	0	0
-n	impediment	0	0
+n	impediment	0	0.125
 n	dig	0	0
 a	tangible	0	0
 n	invitation	0.5	0
@@ -2391,6 +2392,7 @@ n	emphasis	0	0
 n	failure	0.5	0.375
 a	new	0	0.125
 n	dent	0	0
+v	dent	0	0.125
 n	faith	0	0
 a	object	0.125	0.25
 n	outdoor	0	0
@@ -2438,10 +2440,11 @@ n	wake	0	0
 v	stated	0.5	0
 n	implication	0	0
 n	grapple	0	0
-n	blow	0	0
+v	blow	0	0.75
 v	observing	0.5	0
 n	rice	0	0
 n	waste	0	0
+v	waste	0	0.125
 n	tone	0.25	0.25
 n	length	0	0
 n	fir	0	0.125
@@ -2506,7 +2509,8 @@ a	ocean	0	0
 n	evolution	0	0
 n	functionality	0.625	0
 a	south	0	0
-n	spoil	0	0
+n	spoil	0	0.125
+v	spoil	0	0.375
 n	colony	0	0
 n	compensation	0	0.25
 v	demonstrated	0.125	0
@@ -2538,7 +2542,7 @@ r	jelly	0	0
 a	voice	0	0
 n	poultry	0	0
 a	wednesday	0	0
-a	ample	0	0
+a	ample	0.125	0
 n	parking	0	0
 n	selection	0	0
 a	sorted	0	0
@@ -2645,7 +2649,7 @@ v	appear	0	0
 v	weakening	0	0.625
 a	attendant	0	0
 n	trader	0	0
-n	bankruptcy	0	0
+n	bankruptcy	0	0.625
 v	elevated	0	0
 a	till	0	0
 a	manifold	0	0
@@ -2681,7 +2685,7 @@ v	tilt	0	0.125
 a	gradual	0	0
 n	meat	0	0
 a	rationale	0	0
-n	encourage	0	0
+v	encourage	0.25	0
 a	physical	0	0
 n	closer	0	0
 n	plug	0	0
@@ -2850,7 +2854,7 @@ v	binding	0.25	0.25
 a	pulsar	0	0
 n	literacy	0.25	0
 n	save	0	0
-v	fell	0	0
+a	fell	0	0.625
 v	result	0.25	0
 n	hands	0	0
 v	sheet	0	0
@@ -2870,7 +2874,7 @@ n	cadre	0.25	0
 a	unchanged	0	0
 n	circumstances	0.5	0
 a	practical	0	0
-n	disaster	0	0
+n	disaster	0	0.375
 v	shutdown	0	0
 a	educational	0.25	0
 v	fallen	0	0.25
@@ -2930,7 +2934,7 @@ a	sharp	0.25	0
 r	primarily	0	0
 v	cook	0	0
 n	clay	0	0
-a	worth	0	0
+a	worth	0.25	0
 n	downside	0.125	0
 a	twin	0	0
 a	exclude	0	0
@@ -2984,7 +2988,7 @@ n	values	0	0
 v	knowing	0.125	0
 a	beneficiary	0.25	0.125
 n	pat	0.5	0
-n	perfection	0	0
+n	perfection	0.125	0
 n	cards	0	0
 n	imbalance	0	0.375
 n	remember	0	0
@@ -3047,7 +3051,7 @@ n	handmade	0	0
 a	empty	0	0
 n	mouth	0	0
 a	scuttle	0	0
-r	trifle	0	0
+v	trifle	0	0.25
 a	arbitrary	0	0
 n	involve	0	0
 n	camp	0	0
@@ -3070,7 +3074,7 @@ a	rich	0.125	0
 v	used	0	0.125
 a	profitable	0.25	0
 n	museum	0	0
-a	safe	0	0
+a	safe	0.25	0
 a	industrial	0.25	0.375
 n	devise	0	0
 n	quarter	0	0
@@ -3095,7 +3099,7 @@ a	imperfect	0.125	0.75
 n	sorry	0	0.625
 v	finding	0	0
 a	private	0	0
-a	fantastic	0.375	0.375
+a	fantastic	0.375	0
 v	dissatisfied	0	0.5
 a	breathe	0	0.125
 n	inventor	0	0
@@ -3199,6 +3203,7 @@ n	image	0	0
 v	buy	0.125	0
 n	retailer	0	0
 n	crunch	0	0
+n	crunch	0	0.375
 v	reducing	0	0
 a	ship	0	0
 n	class	0.625	0
@@ -3339,7 +3344,7 @@ v	activated	0	0.125
 a	vital	0	0
 a	inspirational	0.625	0
 n	proposition	0	0
-n	reconcile	0	0
+v	reconcile	0.125	0
 n	transparency	0	0
 n	plenty	0	0.375
 v	sustained	0	0
@@ -3368,7 +3373,8 @@ n	background	0	0
 v	klein	0	0
 a	amusement	0.125	0.5
 n	survival	0	0
-v	defect	0	0
+n	defect	0	0.25
+v	defect	0	0.125
 a	vocational	0	0
 a	agricultural	0	0
 n	builder	0	0
@@ -3384,7 +3390,7 @@ a	invoice	0	0
 n	embrace	0.375	0
 r	too	0.125	0.25
 a	profession	0.125	0
-n	disappointment	0	0
+n	disappointment	0	0.75
 a	unreasonable	0.125	0.5
 v	written	0	0
 a	constructive	0.5	0
@@ -3505,7 +3511,7 @@ r	expeditiously	0.25	0
 a	amount	0	0
 v	link	0	0
 n	don	0.125	0
-n	shock	0	0
+v	shock	0.125	0.375
 n	plan	0	0
 n	concession	0	0
 a	accountable	0	0
@@ -3528,6 +3534,7 @@ n	deposit	0	0
 v	floating	0	0
 n	permit	0	0
 n	transparent	0	0
+a	transparent	0	0.25
 v	drafting	0	0
 v	saving	0.625	0
 a	j	0	0
@@ -3569,12 +3576,12 @@ n	irrigation	0	0
 n	debate	0	0
 r	comfortably	0	0.125
 a	charitable	0.5	0.125
-n	freedom	0	0
+n	freedom	0.125	0
 v	removed	0	0
 a	dominate	0	0
 n	restrict	0	0
 n	necessity	0	0
-n	attract	0	0
+v	attract	0.625	0
 a	least	0	0
 a	respect	0.25	0
 n	google	0	0
@@ -3592,7 +3599,7 @@ a	write	0	0
 n	access	0	0
 n	hyderabad	0	0
 a	propel	0	0
-a	clog	0	0
+a	clog	0	0.125
 a	november	0	0
 n	program	0	0
 n	liquidation	0	0
@@ -3648,10 +3655,10 @@ n	milestone	0	0
 a	southern	0	0
 n	sagacity	0.125	0
 r	mostly	0	0
-v	strengthening	0	0
+n	strengthening	0.125	0
 v	stocking	0	0
 a	ip	0	0
-a	ideal	0	0
+a	ideal	0.75	0
 n	acquisition	0	0
 v	established	0	0
 a	accurate	0.5	0
@@ -3673,7 +3680,7 @@ v	kashmir	0	0
 v	travelling	0	0
 a	page	0	0
 n	traction	0	0
-n	downhill	0	0
+r	downhill	0	0.125
 n	commissioner	0	0
 v	rolling	0	0.125
 r	handily	0.125	0
@@ -3834,6 +3841,7 @@ n	interaction	0	0
 v	cracked	0	0.25
 n	shell	0	0
 n	rapid	0	0
+a	rapid	0.5	0
 r	absurdly	0	0
 v	hub	0	0
 a	own	0	0
@@ -3842,8 +3850,7 @@ a	eastern	0	0
 n	vexing	0	0.5
 n	danger	0	0.25
 r	politically	0	0
-a	devil	0	0
-n	khalsa	0	0
+n	devil	0.44	0.556
 n	abuse	0.625	0.125
 n	hotspot	0.25	0
 n	fault	0	0
@@ -3872,7 +3879,7 @@ r	allegedly	0	0
 a	ultimate	0	0
 n	calibrate	0.25	0
 n	water	0.125	0
-v	disturbed	0	0
+a	disturbed	0	0.5
 a	abused	0.375	0.125
 a	forest	0	0
 a	dry	0.125	0.5
@@ -3885,11 +3892,12 @@ a	logical	0.625	0
 a	equal	0	0
 n	dispensation	0	0
 n	grocery	0	0
-n	miss	0	0
+v	miss	0	0.5
+n	miss	0	0.5
 v	supporting	0.625	0
 n	wane	0	0
 r	thus	0	0
-r	obstacle	0	0
+n	obstacle	0	0
 n	partnership	0	0
 n	flag	0.5	0
 n	sikkim	0	0
@@ -3991,7 +3999,7 @@ n	end	0	0
 n	efficiency	0.125	0
 v	shrine	0	0
 n	picket	0	0
-a	low	0	0
+a	low	0	0.875
 a	confident	0.375	0
 n	snack	0	0
 n	shanghai	0	0
@@ -4065,6 +4073,7 @@ n	speculation	0	0
 v	showing	0	0
 a	urgent	0	0
 n	compromise	0	0
+v	compromise	0	0.25
 n	losses	0	0
 v	remains	0	0.125
 n	presence	0	0
@@ -4104,7 +4113,7 @@ v	pursuing	0	0
 a	structural	0	0
 n	mobile	0	0
 n	carrier	0	0
-n	wound	0	0
+n	wound	0	0.125
 v	contained	0	0
 a	depend	0	0
 n	verge	0	0
@@ -4175,7 +4184,7 @@ n	headwind	0	0
 v	cake	0	0
 v	parked	0	0
 a	allow	0	0
-n	improvement	0	0
+n	improvement	0.375	0
 v	expressed	0.5	0
 a	answer	0	0
 n	menu	0	0
@@ -4190,7 +4199,7 @@ n	citizen	0	0
 v	borrowing	0	0
 a	provide	0.125	0
 n	infra	0	0
-n	bias	0	0
+n	bias	0	0.875
 n	symphony	0	0
 v	complicated	0.125	0.625
 v	pouring	0	0
@@ -4246,7 +4255,7 @@ r	globally	0	0
 a	berry	0	0
 n	broadband	0	0
 n	watchdog	0	0
-n	betterment	0	0
+n	betterment	0.375	0
 v	bold	0.5	0.125
 a	secondary	0	0.375
 a	little	0	0
@@ -4298,7 +4307,7 @@ n	direction	0	0
 v	occupied	0.125	0
 a	personal	0	0
 v	reduce	0	0
-n	burden	0	0
+n	burden	0	0.875
 n	waybill	0	0
 v	lawn	0	0
 n	projection	0	0
@@ -4316,13 +4325,13 @@ a	operative	0	0
 a	better	0.75	0
 n	flood	0	0
 n	reckoner	0	0
-n	disruption	0	0
+n	disruption	0	0.625
 v	earthwork	0	0
 a	marginal	0.125	0
 n	narrow	0.5	0.25
 v	united	0	0
 n	enjoy	0.5	0
-n	problem	0	0
+n	problem	0	0.25
 n	ordeal	0	0.375
 n	seamless	0.5	0
 n	teens	0	0
@@ -4336,7 +4345,8 @@ a	staffer	0	0
 v	setting	0	0
 n	hunt	0	0
 v	switching	0	0
-n	advantage	0	0
+n	advantage	0.625	0
+v	advantage	0.25	0
 v	corresponding	0	0
 n	pulp	0	0
 a	multiple	0	0
@@ -4345,7 +4355,7 @@ n	hence	0.625	0
 n	fiction	0	0
 n	grouse	0	0
 v	refer	0	0
-v	lessen	0	0
+v	lessen	0	0.25
 n	tandem	0	0
 a	choose	0	0
 n	bail	0	0
@@ -4365,7 +4375,7 @@ a	double	0	0
 n	importation	0	0
 a	open	0	0
 n	approach	0	0
-n	nemesis	0	0
+n	nemesis	0	0.625
 v	dragging	0.125	0.5
 n	gainer	0	0
 n	reverse	0.125	0
@@ -4439,7 +4449,7 @@ a	large	0.25	0
 n	kannada	0	0
 v	recharge	0	0
 n	swine	0	0
-a	impressed	0.5	0.5
+a	impressed	0.5	0
 n	bit	0	0
 a	watts	0	0
 n	quantity	0	0.375
@@ -4455,7 +4465,7 @@ a	regardless	0	0.625
 n	sin	0	0.25
 n	dollar	0	0
 v	paid	0.375	0
-a	suppress	0	0
+v	suppress	0	0.25
 n	farm	0	0
 a	self-regulating	0	0
 n	dissent	0.25	0.375
@@ -4537,7 +4547,8 @@ v	opening	0	0
 r	fairly	0.375	0
 a	d	0	0
 n	life	0	0
-n	gain	0	0
+n	gain	0.875	0
+v	gain	0.25	0
 v	smoke	0	0
 n	benchmark	0	0
 v	asserted	0.5	0
@@ -4573,6 +4584,7 @@ a	various	0.25	0
 a	placate	0.875	0
 a	american	0	0
 a	upward	0	0
+r	upward	0.125	0
 n	rent	0	0
 v	hogged	0	0
 n	assets	0.25	0
@@ -4868,7 +4880,7 @@ a	advancing	0	0
 a	unfavorable	0.125	0.5 
 a	unfavourable	0.125	0.5
 a	unfair	0.375	0.375 
-a	unjust	0.375	0.375 
+a	unjust	0.25	0.625 
 a	exorbitant	0	0.75 
 a	affecting	0.5	0.125 
 n	hindrance	0	0 
