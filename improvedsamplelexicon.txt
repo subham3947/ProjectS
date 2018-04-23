@@ -59,12 +59,12 @@ n	unpredictability	0.25	0.5
 a	informative	0.125	0
 n	percentage	0	0
 n	powder	0	0
-a	nuclear	0.125	0
+a	nuclear	0	0
 v	learning	0	0
 r	nearly	0.125	0
-v	frost	0	0.125
+v	frost	0	0
 a	waiver	0	0
-n	description	0	0.125
+n	description	0	0
 v	opened	0	0
 a	encompass	0	0
 v	waning	0	0
@@ -254,7 +254,7 @@ n	scholar	0	0
 a	criminal	0	0.375
 n	trade	0.125	0
 r	personally	0	0
-v	thwarting	0.625	0
+v	thwarting	0	0
 n	metrology	0	0
 v	revived	0.5	0.125
 n	grant	0.125	0
@@ -1225,7 +1225,7 @@ n	order	0	0
 n	company	0	0
 n	carmaker	0	0
 v	thought	0.125	0
-n	upwards	0	0
+r	upwards	0.125	0
 r	most	0	0
 r	only	0	0
 n	property	0	0
@@ -1516,7 +1516,8 @@ n	vishnu	0	0.375
 n	devices	0	0
 r	very	0.5	0
 r	unanimously	0.375	0
-a	dip	0	0
+n	dip	0	0.125
+v	dip	0	0.125
 n	john	0	0
 v	amended	0.5	0
 n	steel	0	0
@@ -1690,7 +1691,8 @@ n	law	0	0
 r	pretty	0.875	0.125
 a	connect	0	0
 n	material	0	0
-n	rise	0	0
+n	rise	0.125	0
+v	rise	0.375	0
 n	pall	0	0
 n	collaboration	0	0
 a	rupee	0	0
@@ -1724,7 +1726,7 @@ a	accommodate	0.125	0
 n	collision	0	0.125
 n	faq	0	0
 n	incident	0	0.25
-v	encouraged	0.375	0
+a	encouraged	0.375	0
 a	type	0	0
 a	electronic	0	0
 n	click	0	0
@@ -2322,7 +2324,7 @@ v	stays	0	0
 n	implantation	0	0
 n	coordinate	0.25	0.375
 v	blazing	0.375	0
-v	succeed	0	0
+v	succeed	0.125	0
 a	due	0	0
 n	arbitrage	0	0
 a	listen	0	0
@@ -3007,7 +3009,7 @@ a	operational	0	0
 v	developed	0	0
 a	format	0	0
 n	promulgation	0	0
-n	momentum	0	0
+n	momentum	0.25	0.125
 a	toyota	0	0
 n	tamil	0	0
 r	ideally	0.375	0
@@ -3367,7 +3369,7 @@ a	sufi	0	0
 a	northern	0	0
 v	pitched	0	0
 a	institutional	0	0
-v	slashing	0.25	0
+a	slashing	0.25	0
 n	equity	0	0
 n	melt	0.125	0.125
 n	ecosystem	0	0
@@ -3937,7 +3939,7 @@ n	extension	0	0
 r	ever	0	0
 v	paradigm	0	0
 a	strong	0.375	0.125
-a	upgrade	0	0
+v	upgrade	0.25	0
 n	update	0	0
 v	cropped	0	0
 a	focused	0	0
@@ -4160,6 +4162,7 @@ v	likewise	0	0
 n	bihar	0	0
 n	interpretation	0	0
 n	progress	0.125	0
+v	progress	0.5	0
 n	correction	0.25	0.125
 v	paving	0	0
 n	chocolate	0	0
