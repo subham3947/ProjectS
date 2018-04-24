@@ -46,7 +46,6 @@ n	superintendent	0	0
 v	premises	0	0
 n	release	0	0
 n	nutrition	0	0
-n	punch	0	0
 v	barred	0	0.375
 a	separate	0	0.5
 r	always	0	0
@@ -110,7 +109,6 @@ n	school	0	0
 a	abnormal	0.5	0.125
 n	transactions	0	0
 a	belong	0	0
-n	lag	0	0
 n	saturday	0	0
 n	priority	0	0
 a	black	0.125	0.5
@@ -252,7 +250,6 @@ n	scholar	0	0
 a	criminal	0	0.375
 n	trade	0.125	0
 r	personally	0	0
-v	thwarting	0	0
 n	metrology	0	0
 v	revived	0.5	0.125
 n	grant	0.125	0
@@ -260,7 +257,6 @@ a	stable	0.5	0.125
 n	stagnation	0	0.5
 v	done	0	0
 n	ground	0	0
-n	recession	0	0
 n	adjustment	0	0
 a	constable	0	0
 n	retailing	0	0
@@ -367,7 +363,6 @@ a	soft	1	0
 n	nehru	0	0
 v	highlighting	0	0
 v	footing	0	0
-a	lagging	0	0
 n	country	0	0
 a	bilateral	0	0.125
 n	half	0	0
@@ -452,7 +447,6 @@ n	film	0	0
 n	bovine	0.375	0.125
 n	hindu	0	0
 n	column	0	0
-n	downturn	0	0
 v	edged	0	0
 a	roost	0	0
 n	money	0	0
@@ -655,7 +649,6 @@ n	tournament	0	0
 v	shifting	0	0.125
 r	surely	0.25	0
 a	angel	0	0
-n	corruption	0	0
 a	wide	0.375	0
 n	handhold	0	0
 n	rejig	0	0
@@ -665,7 +658,6 @@ n	conduit	0	0
 v	drove	0	0
 v	reflected	0	0
 a	cloak	0	0.25
-a	hectic	0.375	0.375
 n	focus	0.125	0
 a	glad	0.75	0.125
 n	justice	0	0
@@ -725,7 +717,6 @@ r	steadily	0	0.125
 a	compact	0	0
 n	kw	0	0
 n	split	0	0
-n	deficit	0	0
 n	coffin	0	0
 n	stocks	0	0
 n	town	0	0
@@ -902,7 +893,6 @@ n	space	0	0
 n	couple	0	0
 a	unlikely	0	0.5
 n	hike	0	0.25
-v	shutting	0	0
 a	ride	0	0
 a	economic	0.5	0
 n	hope	0.25	0
@@ -943,7 +933,6 @@ a	chaotic	0	0.125
 n	force	0	0
 n	saturation	0	0
 v	praising	0.5	0.25
-n	erosion	0	0
 r	prior	0	0
 r	ignore	0.25	0.125
 a	sheer	0.625	0
@@ -1325,7 +1314,6 @@ n	windfall	0.375	0
 n	activity	0.125	0
 a	brutal	0	0.625
 n	privatize	0	0
-n	shortage	0.375	0.375
 a	unregistered	0	0.5
 n	secondhand	0	0.375
 n	cable	0	0
@@ -1385,7 +1373,6 @@ v	softening	0	0
 v	taxing	0.125	0.375
 n	coverage	0	0.25
 v	cast	0	0
-a	suicide	0	0
 n	timber	0	0
 a	realistic	0.25	0.25
 n	hatchback	0	0
@@ -1538,7 +1525,6 @@ n	encounter	0	0
 v	existing	0.125	0
 r	digitally	0	0
 v	marketing	0	0
-v	burdened	0	0
 n	inspiration	0.375	0
 n	businessmen	0	0
 v	spa	0.125	0
@@ -1869,7 +1855,7 @@ n	standard-bearer	0	0
 n	lease	0	0
 a	cohesive	0	0.5
 n	eliminate	0	0
-v	choke	0	0
+v	choke	0	0.125
 a	upload	0	0
 n	prone	0	0.375
 v	sahib	0	0
@@ -1879,7 +1865,7 @@ a	bullish	0.5	0
 a	informal	0	0.25
 n	toxic	0	0.25
 a	overnight	0	0
-n	tension	0	0
+n	tension	0.125	0.375
 n	filing	0	0
 v	coupled	0	0
 v	concerned	0.5	0.375
@@ -2096,7 +2082,6 @@ n	past	0	0.25
 n	bounce	0	0
 n	umbrella	0	0
 a	guilty	0.125	0.625
-n	adulteration	0	0
 n	rod	0	0
 a	major	0	0.125
 a	arduous	0.125	0.75
@@ -2130,7 +2115,6 @@ r	relatively	0	0
 a	vary	0.125	0.375
 r	naturally	0	0
 v	seize	0	0.125
-r	disproportionately	0	0
 a	worldwide	0	0
 v	find	0	0
 n	find	0	0
@@ -2272,7 +2256,6 @@ n	face	0	0
 a	oblique	0.75	0
 n	fleet	0	0
 r	vitally	0.125	0
-v	stuck	0	0
 a	movable	0	0
 v	smoothened	0.25	0
 a	democratic	0.625	0.25
@@ -2454,7 +2437,8 @@ n	thinking	0.25	0
 v	vanished	0	0
 v	unfolding	0	0
 n	mp	0	0
-n	dark	0	0
+n	dark	0.125	0.5
+a	dark	0	0.375
 n	asia	0	0
 v	shaving	0	0
 r	seemingly	0.5	0.125
@@ -2807,7 +2791,6 @@ a	naive	0	0.625
 v	implemented	0	0
 a	easy	0.25	0.625
 r	thereafter	0	0
-a	barrier	0	0
 n	seed	0	0
 n	malaysia	0	0
 n	contradictory	0	0.625
@@ -2869,7 +2852,6 @@ a	unchanged	0	0
 n	circumstances	0.5	0
 a	practical	0	0
 n	disaster	0	0.375
-v	shutdown	0	0
 a	educational	0.25	0
 v	fallen	0	0.25
 a	monthly	0	0
@@ -2903,7 +2885,6 @@ n	philippines	0	0
 n	entitlement	0	0
 n	bone	0	0
 v	orphaned	0	0.5
-n	complication	0	0
 a	entire	0	0
 v	sorting	0	0
 n	essence	0	0
@@ -3018,7 +2999,6 @@ v	organized	0.125	0
 a	bear	0	0
 n	investigation	0.125	0
 r	presently	0	0
-a	unleash	0	0
 n	expense	0	0.25
 n	police	0.125	0
 n	feedback	0	0
@@ -3085,7 +3065,6 @@ n	controller	0	0
 n	comparison	0	0.25
 v	preceding	0	0.125
 a	legislative	0	0
-n	plunge	0	0
 n	preference	0	0
 r	internally	0	0
 a	imperfect	0.125	0.75
@@ -3197,7 +3176,6 @@ v	buy	0.125	0
 n	retailer	0	0
 n	crunch	0	0
 n	crunch	0	0.375
-v	reducing	0	0
 a	ship	0	0
 n	class	0.625	0
 n	script	0	0
@@ -3235,8 +3213,6 @@ n	filament	0	0
 v	worried	0	0.75
 a	leak	0	0
 n	methodology	0	0
-n	conspiracy	0	0
-a	sari	0	0
 n	scheme	0	0
 v	contracted	0	0.25
 r	predictably	0	0
@@ -3265,7 +3241,6 @@ n	chamber	0	0.125
 n	bearing	0	0
 n	overtime	0	0
 v	substituting	0	0.5
-v	dented	0	0
 n	maker	0	0
 n	hand	0	0
 v	pes	0	0
@@ -3372,7 +3347,6 @@ n	builder	0	0
 v	reversed	0	0
 n	elements	0	0.375
 a	phoenix	0	0
-r	slowly	0	0
 r	nowhere	0	0.25
 n	amendment	0	0.125
 n	affect	0.125	0.125
@@ -3434,7 +3408,6 @@ n	lock	0	0
 n	transfer	0	0
 a	sometime	0	0
 n	instance	0	0
-n	hiccup	0	0
 n	quantum	0	0
 a	shot	0	0
 a	several	0.125	0
@@ -3454,7 +3427,6 @@ a	purse	0	0
 n	damage	0	0.75
 n	transition	0	0
 n	security	0.25	0.125
-n	slowdown	0	0
 n	network	0	0
 v	suffering	0	0.5
 n	prepare	0	0
@@ -3487,7 +3459,6 @@ a	typical	0	0
 v	employed	0	0
 n	morality	0.875	0.125
 a	maiden	0	0
-n	derail	0	0
 n	clueless	0.125	0.5
 n	showroom	0	0
 n	malpractice	0	0.5
@@ -3697,7 +3668,6 @@ n	wife	0	0
 v	educate	0	0
 a	strive	0	0.25
 a	continuous	0	0.5
-n	depreciation	0	0
 a	portal	0	0
 a	inr	0	0
 a	congenial	0.5	0
@@ -3831,7 +3801,6 @@ v	cracked	0	0.25
 n	shell	0	0
 n	rapid	0	0
 a	rapid	0.5	0
-r	absurdly	0	0
 v	hub	0	0
 a	own	0	0
 n	passage	0	0
@@ -3886,7 +3855,6 @@ n	miss	0	0.5
 v	supporting	0.625	0
 n	wane	0	0
 r	thus	0	0
-n	obstacle	0	0
 n	partnership	0	0
 n	flag	0.5	0
 n	sikkim	0	0
@@ -3965,7 +3933,6 @@ a	jurisdictional	0	0
 n	filling	0	0
 n	polymer	0	0
 n	exit	0	0
-v	dismantling	0	0
 a	british	0	0
 a	comparable	0.5	0
 a	public	0	0
@@ -4062,7 +4029,6 @@ v	showing	0	0
 a	urgent	0	0
 n	compromise	0	0
 v	compromise	0	0.25
-n	losses	0	0
 v	remains	0	0.125
 n	presence	0	0
 n	shoe	0	0
@@ -4203,7 +4169,6 @@ a	healthy	0.75	0
 a	cleaner	0	0
 n	competition	0	0
 n	insurance	0	0
-n	deflation	0	0
 n	platform	0	0
 v	empower	0	0
 n	wee	0	0
@@ -4262,7 +4227,6 @@ n	sponge	0	0
 n	words	0	0
 a	nationwide	0	0
 v	prospect	0.25	0.125
-a	undermine	0	0
 a	surging	0.125	0.625
 n	thrice	0.25	0
 r	daily	0	0
@@ -4274,7 +4238,6 @@ n	meal	0	0
 v	verified	0.25	0
 a	salt	0	0.75
 a	technological	0	0
-n	npa	0	0
 a	alternative	0.125	0
 n	hardware	0	0
 a	modern-day	0	0
@@ -4457,7 +4420,6 @@ n	farm	0	0
 a	self-regulating	0	0
 n	dissent	0.25	0.375
 n	ingredient	0	0
-n	glitch	0	0
 v	giving	0	0
 a	litre	0	0
 n	emerge	0	0
@@ -4624,7 +4586,7 @@ a	specialised	0	0
 v	misuse	0	0.375
 n	misuse	0	0.625
 a	disabled	0	0.75
-n	blockage	0	0
+n	blockage	0	0.007333308308231925
 a	muted	0	0.125
 a	tumultuous	0	0.75
 n	blame	0	0.5	
@@ -4686,10 +4648,8 @@ a	decreased	0	0.125
 n	downfall	0	0.75 
 a	handsome	0.5	0 
 a	experienced	0.5	0 
-n	infringement	0	0 
 n	bane	0	0.625 
 a	provisional	0	0.625 
-a	fragmented	0	0
 a	unanswered	0	0.625 
 n	bonus	0.375	0 
 a	avoidable	0.625	0 
@@ -4732,9 +4692,7 @@ a	proper	0.75	0
 a	untested	0.125	0.5 
 a	difficult	0	0.75 
 a	owing	0	0 
-v	excel	0	0.25 
-a	lackluster	0.25	0.25 
-a	lacklustre	0.25	0.25 
+v	excel	0	0
 n	counting	0	0 
 a	ended	0.375	0 
 n	temper	0	0.375
@@ -4754,7 +4712,6 @@ n	mere	0	0
 a	neglected	0	0.375  
 a	bothersome	0	0.5
 n	outing	0	0 
-n	dampening	0	0 
 n	informing	0	0 
 a	garish	0	0.5 
 a	constraining	0	0 
@@ -4814,8 +4771,6 @@ a	meaningless	0.125	0.375
 a	inherited	0	0.125
 a	unglamorous	0.25	0.375 
 a	unglamourous	0.25	0.375
-n	dwindling	0	0 
-a	dwindling	0	0 
 r	notwithstanding	0.125	0.5
 a	contributing	0.25	0.25 
 a	neutralised	0.5	0
@@ -4862,7 +4817,6 @@ a	unfair	0.375	0.375
 a	unjust	0.25	0.625 
 a	exorbitant	0	0.75 
 a	affecting	0.5	0.125 
-n	hindrance	0	0 
 a	equipped	0.25	0
 a	confirming	0	0
 n	excess	0.125	0
@@ -4870,7 +4824,7 @@ a	huge	0	0.125
 a	utilised	0	0
 a	utilized	0	0
 a	accepted	0.5	0 
-n	breakup	0	0 
+n	breakup	0	0.04521297745483689 
 a	aggregated	0.25	0.125
 n	achievement	0.006402163937094271	0
 a	durable	0.0014501788389830563	0
@@ -4905,3 +4859,54 @@ n	smoother	0.017785379919964782	0
 a	structured	0.015464148810639865	0
 n	uplifting	0.01940047759880274	0
 n	upside	0.000336293358751271	0
+r	absurdly	0	0.003426545497540625
+n	adulteration	0	0.038660372026599665
+n	barrier	0	0.007493161993919598
+a	burdened	0	0.01135867795290919
+n	complication	0	0.015199804386526364
+n	conspiracy	0	0.02853011411588638
+n	corruption	0	0.0017602443469660696
+n	dampening	0	0.023399698858205056
+n	deficit	0	0.005007534152223094
+n	deflation	0	0.010488651556516147
+a	dented	0	0.0030579605791243793
+n	depreciation	0	0.016990864139078833
+v	derail	0	0.0276431675630609
+n	dismantling	0	0.030313246248129283
+r	disproportionately	0	0.02693806683913983
+n	downturn	0	0.020370521618027226
+n	dwindling	0	0.02641154128549878 
+a	dwindling	0	0.02641154128549878 
+n	erosion	0	0.056756716379476095
+a	fragmented	0	0.015419454738932812
+n	glitch	0	0.030313246248129283
+a	hectic	0	0.0048712116912673796
+n	hiccup	0	0.01157198645906711
+v	hiccup	0	0.01157198645906711
+n	hindrance	0	0.009938843208795541 
+n	infringement	0	0.03824466910158246
+a	lackluster	0	0.015330837182961935
+a	lacklustre	0	0.006671683544886052
+n	lag	0	0.005222104058858675
+v	lag	0	0.005222104058858675
+n	lagging	0	0.020370521618027226
+n	losses	0	0.0008250295011235247
+n	npa	0	0.0026071239309805156
+n	obstacle	0	0.02564966990226324
+n	plunge	0	0.023474601102678995
+v	plunge	0	0.023474601102678995
+n	punch	0	0.014076863693062673
+v	punch	0	0.014076863693062673
+n	recession	0	0.032139345419703334
+n	reducing	0	3.493937355887899e-05	
+n	shortage	0	0.0016653134162533615
+n	shutdown	0	0.0030260850364304598
+n	shutting	0	0.022322725270588924
+n	slowdown	0	0.0009332604749183361
+r	slowly	0	0.009210286029981762
+a	stuck	0	0.0009553640124821915
+n	suicide	0	0.01940047759880274
+n	thwarting	0	0.01616706466566895
+a	thwarting	0	0.01616706466566895
+v	undermine	0	0.007976806199939464
+v	unleash	0	0.0013035619654902578
