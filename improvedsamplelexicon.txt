@@ -99,6 +99,8 @@ n	count	0.25	0
 n	timeline	0	0
 v	qualify	0	0
 v	recording	0	0
+n	dent	0	0.125
+v	dent	0	0.125
 r	stridently	0.25	0
 v	chuckle	0	0
 r	aside	0	0
@@ -777,7 +779,7 @@ n	chorus	0	0
 n	adaptation	0	0
 n	work	0	0
 n	nothing	0	0
-v	make	0.5	0
+v	make	0	0
 n	path	0	0
 n	wisdom	0.125	0
 a	time-consuming	0.125	0
@@ -1306,6 +1308,7 @@ n	announce	0	0
 v	exporting	0	0
 n	pollution	0	0
 n	correspondent	0	0
+v	dent	0	0.125
 a	pole	0	0
 a	total	0	0
 n	league	0	0
@@ -2640,6 +2643,7 @@ a	rationale	0	0
 v	encourage	0.25	0
 a	physical	0	0
 n	closer	0	0
+n	loser	0	0.375
 n	plug	0	0
 n	mart	0	0
 v	assigned	0	0
@@ -2718,7 +2722,8 @@ n	teething	0	0
 a	resident	0	0
 n	crop	0	0
 v	involved	0	0
-n	reduction	0	0
+n	reduction	0.125	0
+a	ambiguous	0	0.5
 v	forge	0	0
 r	apply	0	0
 r	positively	0.25	0
@@ -2802,6 +2807,7 @@ v	binding	0.25	0.25
 a	pulsar	0	0
 n	literacy	0.25	0
 n	save	0	0
+v	save	0.5	0
 a	fell	0	0.625
 n	result	0	0
 n	hands	0	0
@@ -3766,7 +3772,7 @@ a	unclear	0.25	0.625
 n	luxury	0.375	0.25
 v	cleared	0	0
 n	sanitary	0	0
-n	disadvantage	0	0.75
+n	disadvantage	0	0.625
 r	competitively	0	0
 a	rude	0	0.375
 a	deploy	0	0
@@ -4228,7 +4234,7 @@ n	calender	0	0
 n	direction	0	0
 a	occupied	0	0
 a	personal	0	0
-v	reduce	0	0
+v	reduce	0.125	0
 n	burden	0	0.875
 n	waybill	0	0
 v	lawn	0	0
@@ -4726,9 +4732,12 @@ a	financial	0.25	0
 a	agile	0.375	0 
 a	infamous	0	0.875
 a	adverse	0.25	0.625
+a	anti	0	0.375	
 a	decided	0.5	0 
+a	inhuman	0	0.625
 n	settling	0	0.25 
-n	capability	0.625	0.125 
+n	capability	0.125	0 
+n	torture	0	0.625
 a	additional	0	0 
 a	constrained	0.125	0.625 
 a	doubled	0.125	0 
