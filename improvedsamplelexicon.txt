@@ -3140,7 +3140,7 @@ v	pave	0	0
 a	fraudulent	0	0.625
 n	none	0	0
 n	image	0	0
-v	buy	0.125	0
+v	buy	0	0
 n	retailer	0	0
 n	crunch	0	0
 n	crunch	0	0.375
@@ -3765,7 +3765,7 @@ n	fault	0	0
 a	unclear	0.25	0.625
 n	luxury	0.375	0.25
 v	cleared	0	0
-a	sanitary	0.625	0.25
+n	sanitary	0	0
 n	disadvantage	0	0.75
 r	competitively	0	0
 a	rude	0	0.375
@@ -4789,6 +4789,7 @@ n	excess	0.125	0
 a	huge	0	0.125 
 a	utilised	0	0
 a	utilized	0	0
+n	nightmare	0	0.25
 n	warp	0	0.75
 a	accepted	0.5	0 
 n	breakup	0	0.04521297745483689 
