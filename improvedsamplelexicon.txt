@@ -3346,7 +3346,7 @@ n	personnel	0	0
 n	debit	0	0
 n	removal	0	0
 v	khan	0	0
-v	go	0.25	0
+v	go	0	0
 n	conduct	0.125	0
 n	unavailability	0.25	0.625
 n	climb	0	0
