@@ -433,7 +433,7 @@ a	outside	0	0
 n	style	0	0
 n	escalation	0	0
 n	metre	0	0
-n	concern	0	0
+n	concern	0.125	0.75
 n	purity	0	0
 v	signed	0	0
 n	excellence	0.625	0
@@ -1003,7 +1003,7 @@ v	elaborate	0	0
 r	simultaneously	0	0
 a	admissible	0.625	0.5
 a	lathi	0	0
-a	critical	0.125	0
+a	critical	0	0.125
 n	ballet	0	0
 r	actually	0	0
 v	crossed	0	0
@@ -3647,7 +3647,7 @@ n	display	0	0
 n	cylinder	0	0
 v	matched	0.5	0
 n	march	0	0.125
-a	ready	0	0
+a	ready	0.5	0
 n	cascade	0	0
 n	jewelry	0	0
 n	barrel	0	0
@@ -4788,7 +4788,7 @@ v	confound	0.125	0.625
 a	advancing	0	0 
 a	unfavorable	0.125	0.5 
 a	unfavourable	0.125	0.5
-a	unfair	0.375	0.375 
+a	unfair	0.25	0.625 
 a	unjust	0.25	0.625 
 a	exorbitant	0	0.75 
 a	affecting	0.5	0.125 
