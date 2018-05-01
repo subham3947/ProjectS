@@ -8,9 +8,9 @@ Bangladesh and Malaysia powered most of this growth.
 
 "In Bangladesh, smartphone demand grew by a strong 40 per cent year-on-year. Malaysia is maintaining a steady recovery from its 2015 slump and here, demand in 2Q17 grew by 31 per cent year-on-year," the report noted.
 
-The global smartphone demand totalled 347 million units in the second quarter of 2017, up four percent year-on-year.
+The global smartphone demand totalled 347 million units in the second quarter of 2017, up four percent year-on-year. 
 
-"This makes it the strongest second quarter on record. Emerging Asia led the demand growth with a 13 per cent year-on-year increase, followed by Central and Eastern Europe at 11 percent, and Latin America at 10 percent," GfK noted.
+"This makes it the strongest second quarter on record. Emerging Asia led the demand growth with a 13 per cent year-on-year increase, followed by Central and Eastern Europe at 11 percent, and Latin America at 10 percent," GfK noted. 
 
 "The record demand for smartphones in the second quarter this year shows that, despite saturation in some markets, the desire to own a smartphone is a worldwide phenomenon. How that manifests itself differs widely by region," said Arndt Polifke, global director of Telecom Research at GfK.
 
@@ -18,12 +18,12 @@ In China, smartphone demand plateaued in the second quarter of 2017 at 110.1 mil
 
 Manufacturers are maximizing all their creativity to ensure their latest devices are irresistible.
 
-"Elsewhere, macro-economic factors and consumer confidence are having an impact, but operators and retailers are employing localised tactics to ensure the smartphone remains the connected device of choice," Polifke added.
-With tailoring of wearing apparel attracting 18 per cent Goods and Services Tax (GST), tailors fears losing out customers due to hike in subsequent stitching charges.
+"Elsewhere, macro-economic factors and consumer confidence are having an impact, but operators and retailers are employing localised tactics to ensure the smartphone remains the connected device of choice," Polifke added. 
+With tailoring of wearing apparel attracting 18 per cent Goods and Services Tax (GST), tailors fears losing out customers due to hike in subsequent stitching charges. 
 
-In a memorandum to the Punjab finance minister, Manpreet Singh Badal, the Punjab Tailoring Association (PTA) on Tuesday said the high GST rate on tailoring as a service will render tailors unemployed as the high stitching costs will turn away customers towards readymade apparels.
+In a memorandum to the Punjab finance minister, Manpreet Singh Badal, the Punjab Tailoring Association (PTA) on Tuesday said the high GST rate on tailoring as a service will render tailors unemployed as the high stitching costs will turn away customers towards readymade apparels. 
 
-The PTA pointed out in the memorandum that wearing apparel is a basic need of every human being as compared to gold which attracts only five per cent GST.
+The PTA pointed out in the memorandum that wearing apparel is a basic need of every human being as compared to gold which attracts only five per cent GST. 
 
 "Due to the need of every person more persons are involved in this line of wearing apparel manufacturing service as compared to gold. So, liberal view should be taken for imposing tax on wearing apparel manufacturing services," the PTA said in the memorandum.
 
@@ -38,3 +38,28 @@ He further said that most of the people involved in tailoring are illiterate and
 "If there won't be any amendment in the current tax slab for tailoring category, then we will definitely take this matter to the court,'' Verma said.
 
 "It is unfair and biased. Not only Punjab Association but all the tailoring association from other states like Jammu and Kashmir, Himachal Pradesh, Haryana, etc, all over India are facing the same problem and will submit their memorandums to their concerned authorities in their respective states,'' said general secretary, PTA, Bhagwan Singh Namdhari.
+Following the roll-out of the GST, state-run Indraprastha Gas Ltd (IGL) hiked the price of CNG in Delhi by Rs.1.11 per kg, and of piped natural gas (PNG) to households by 33 paise per unit, effective Wednesday, to account for increase in tax under the pan-India indirect tax regime.
+
+In Noida, Greater Noida and Ghaziabad, the revision would result in an increase in CNG of Rs.1.27 per kg.
+
+The new consumer price of CNG will be Rs.38.76 per kg in Delhi and Rs.44.42 per kg in Noida, Greater Noida and Ghaziabad.
+
+"Indraprastha Gas Ltd announced the revision in the selling prices of Compressed Natural Gas (CNG) and Piped Natural Gas (PNG) in NCT of Delhi, Noida, Greater Noida and Ghaziabad to offset the overall impact on its costs after transition to GST regime," an IGL statement here said.
+
+The company said it would continue to offer the discount of Rs.1.50 per kg on CNG filling between 12.30 am and 5.30 am at select outlets.
+
+The price of PNG was also raised from Rs.24.86 per standard cubic meter (scm) to Rs.25.19 per scm in Delhi.
+
+Owing to a different tax structure in Uttar Pradesh, the price of domestic PNG in Noida, Greater Noida and Ghaziabad would be Rs.26.73 per scm, an increase of 36 paise per scm from existing Rs.26.37 per scm.
+
+"Under the previous indirect tax regime, IGL was entitled to avail input credits against excise duty and service tax paid on certain goods and services purchased," the statement said.
+
+"Since natural gas has been kept outside the ambit of GST, such input tax credits which were earlier available have been discontinued now leading to additional costs," it added.
+
+Moreover, unlike earlier, GST has become applicable on transportation charges of input natural gas being purchased after June 30, 2017, IGL said.
+
+The company also said the increase would have a marginal impact on the running cost of vehicles.
+
+For autos, the increase would be 3 paise per km, for taxis it would be 5 paise per km, and in the case of buses, the increase would be 32 paise per km, the statement said.
+
+"With the revised price, CNG would still offer over 57 per cent savings towards the running cost when compared to petrol-driven vehicles at the current level of prices. When compared to diesel-driven vehicles, the economics in favour of CNG at revised price would be nearly 30 per cent," it added.
