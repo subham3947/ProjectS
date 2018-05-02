@@ -110,52 +110,16 @@ Note that the equation is centered using a center tab stop. Be sure that the sym
 
 
 \section{PROPOSED METHODOLOGY}
+Our approach consists of two tasks: first is the creation of a domain-specific polarity lexicon with a polarity weight assigned to each word as positive,negative or neutral using a news corpora. Second is proposing a sentiment calculator to evaluate the created lexicon.
+\subsection{Domain-Specific Lexicon Generation}
+In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}.SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
 
-Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if you filter is set to produce A4, you will only get A4 output. }
-
-It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
-
-\subsection{Headings, etc}
-
-Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ÒHeading 1Ó, ÒHeading 2Ó, ÒHeading 3Ó, and ÒHeading 4Ó are prescribed.
-
-\subsection{Figures and Tables}
-
-Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
-
-\begin{table}[h]
-\caption{An Example of a Table}
-\label{table_example}
-\begin{center}
-\begin{tabular}{|c||c|}
-\hline
-One & Two\\
-\hline
-Three & Four\\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
-   \begin{figure}[thpb]
-      \centering
-      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
-}}
-      %\includegraphics[scale=1.0]{figurefile}
-      \caption{Inductance of oscillation winding on amorphous
-       magnetic core versus DC bias magnetic field}
-      \label{figurelabel}
-   \end{figure}
-   
-
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
-
+We create a bag of words 
 \section{EXPERIMENT}
 
 \subsection{Dataset}
 
-The datasets used for our study were of two different types on a particular domain. The first one being the newspaper articles from popular Indian newspapers relating to GST(Goods And Services Tax) . The second dataset comprised of the tweets that depict the public opinion on GST of one month.
+The datasets used for our study were of two different types on a particular domain. The first one being the newspaper articles from popular Indian newspapers relating to GST(Goods And Services Tax) . The second dataset comprised of the tweets that depict the public opinion on GST for the month of July, 2017.
 
 \subsubsection{News Corpora}
 
@@ -165,7 +129,8 @@ The data was acquired from four popular Indian newspapers namely, The Economic T
 This dataset was created from Twitter, a popular social networking service where users post their messages and opinion called tweets.The tweets collected were based on GST which can depict the public sentiment after the launch of GST in India. The timeline of the collected tweets was from 1st July, 2017(GST launch) till 31st July, 2017.
 
 
-
+\subsection{Evaluation}
+The domain-specific lexicon created from the news corpus was evaluated on the twitter dataset by using the sentiment measurer introduced in Section 0.0. The sentiment of each tweet was measured using both the domain-specific and SentiWordNet 3.0 lexicon to compare the difference between the intensities of the sentiment values by the two lexicon.
 
 \section{CONCLUSIONS}
 
@@ -195,6 +160,46 @@ Appendixes should appear before the acknowledgment.
 
 The preferred spelling of the word ÒacknowledgmentÓ in America is without an ÒeÓ after the ÒgÓ. Avoid the stilted expression, ÒOne of us (R. B. G.) thanks . . .Ó  Instead, try ÒR. B. G. thanksÓ. Put sponsor acknowledgments in the unnumbered footnote on the first page.
 
+Use this sample document as your LaTeX source file to create your document. Save this file as {\bf root.tex}. You have to make sure to use the cls file that came with this distribution. If you use a different style file, you cannot expect to get required margins. Note also that when you are creating your out PDF file, the source file is only part of the equation. {\it Your \TeX\ $\rightarrow$ PDF filter determines the output file size. Even if you make all the specifications to output a letter file in the source - if you filter is set to produce A4, you will only get A4 output. }
+
+It is impossible to account for all possible situation, one would encounter using \TeX. If you are using multiple \TeX\ files you must make sure that the ``MAIN`` source file is called root.tex - this is particularly important if your conference is using PaperPlaza's built in \TeX\ to PDF conversion tool.
+
+\subsection{Headings, etc}
+
+Text heads organize the topics on a relational, hierarchical basis. For example, the paper title is the primary text head because all subsequent material relates and elaborates on this one topic. If there are two or more sub-topics, the next level head (uppercase Roman numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced. Styles named ÒHeading 1Ó, ÒHeading 2Ó, ÒHeading 3Ó, and ÒHeading 4Ó are prescribed.
+
+\subsection{Figures and Tables}
+
+Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be below the figures; table heads should appear above the tables. Insert figures and tables after they are cited in the text. Use the abbreviation ÒFig. 1Ó, even at the beginning of a sentence.
+
+\begin{table}[h]
+	\caption{An Example of a Table}
+	\label{table_example}
+	\begin{center}
+		\begin{tabular}{|c||c|}
+			\hline
+			One & Two\\
+			\hline
+			Three & Four\\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+\begin{figure}[thpb]
+	\centering
+	\framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
+	}}
+	%\includegraphics[scale=1.0]{figurefile}
+	\caption{Inductance of oscillation winding on amorphous
+		magnetic core versus DC bias magnetic field}
+	\label{figurelabel}
+\end{figure}
+
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,16 +209,17 @@ References are important to the reader; therefore, each citation must be complet
 
 
 \begin{thebibliography}{99}
-
-\bibitem{c1} https://economictimes.indiatimes.com/
+\bibitem{c1}
+Baccianella, Stefano and Esuli, Andrea and Sebastiani, Fabrizio. (2010). SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining.. Proceedings of LREC. 10. 
 \bibitem{c2} 
+https://economictimes.indiatimes.com/
+\bibitem{c3} 
 http://www.thehindu.com/
-\bibitem{c3}
+\bibitem{c4}
 http://www.tribuneindia.com/
-\bibitem{c4} 
+\bibitem{c5} 
 https://www.thestatesman.com/
-\bibitem{c5} http://newspaper.readthedocs.io/en/latest/
-\bibitem{c6} J. Wang, ÒFundamentals of erbium-doped fiber amplifiers arrays (Periodical styleÑSubmitted for publication),Ó IEEE J. Quantum Electron., submitted for publication.
+\bibitem{c6} http://newspaper.readthedocs.io/en/latest/
 \bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
 \bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ÒElectron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style),Ó IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740Ð741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
 \bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
