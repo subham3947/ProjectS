@@ -1513,7 +1513,7 @@ n	definition	0	0
 n	monitoring	0	0
 v	delighted	0.5	0.25
 n	facing	0	0
-n	mess	0	0
+n	mess	0	0.125
 v	mess	0	0.125
 r	leap	0	0
 r	electronically	0	0
@@ -2520,7 +2520,7 @@ n	ledger	0	0
 a	primary	0	0
 n	container	0	0
 v	included	0	0
-a	less	0	0.5
+r	less	0	0
 a	regularly	0.125	0
 n	emergency	0	0
 a	northeastern	0	0
@@ -2755,6 +2755,7 @@ n	simplicity	0.625	0.25
 v	grinding	0	0.125
 a	constituent	0	0
 n	cheer	0.125	0
+v	cheer	0.125	0
 n	factor	0	0
 n	devaluation	0	0.125
 n	kernel	0	0
