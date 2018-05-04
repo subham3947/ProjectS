@@ -147,7 +147,12 @@ After classifying those neutral words as positive or negative we add them to our
 
 \subsection{Sentiment Intensity Calculator}
 Our main objective is to measure the accuracy of the proposed domain-specific lexicon. We propose an algorithm to analyze the sentiment of a sentence by bigram approach. The selection of the bigrams from a sentence for analysing the sentiment depends upon the part of speech which can be polar or can have polarity(mostly adjectives, nouns, verbs and adverbs). For POS tagging we use Stanford NLP Tagger \cite{c8}.
-
+\subsubsection{Part of Speech}
+The proposed algorithm only accepts the bigram ending with an adjective, a noun, an adverb or a verb.
+In a sentence the adjectives are the most relevant part of speech for sentiment analysis. The nouns carry less importance than the adjectives but still there are nouns which are polar and should be considered. For nouns, we have created a list which are polar from Bing Liu's Opinion Lexicon \cite{c9,c10}. Adverbs like comparative and superlative also have relevance for analysing the sentiment. 
+\subsubsection{Dealing with Negation}In our algorithm we apply the simple approach of inverting or flipping the polarity of the word next to the negating word. But there can be a lot of negating words apart from \textit{no, not, never, nope, }etc. Also words like \textit{anti, against or undue} have an almost negating effect on the word next to it. So we have created a list of negating words from the popular NLTK Sentiment Analysis Tool VADER \cite{c11} documentation.
+\subsubsection{Intensifiers or Boosters}
+Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters like \textit{absolutely, amazingly, fabulously} and negative boosters like \textit{badly, hardly, marginally}. Again we create a dictionary of the booster words from \cite{c11} along with their intensities from \cite{c1}.
 \section{EXPERIMENT}
 
 \subsection{Dataset}
@@ -255,9 +260,13 @@ https://www.thestatesman.com/
 \bibitem{c6} http://newspaper.readthedocs.io/en/latest/
 \bibitem{c7}Deepti Chopra,Nisheeth Joshi,Iti Mathur, Mastering Natural Language Processing with Python, 2016.
 \bibitem{c8} Kristina Toutanova, Dan Klein, Christopher Manning, and Yoram Singer. 2003. Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network. In Proceedings of HLT-NAACL 2003, pp. 252-259.
-\bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
-\bibitem{c10} J. U. Duncombe, ÒInfrared navigationÑPart I: An assessment of feasibility (Periodical style),Ó IEEE Trans. Electron Devices, vol. ED-11, pp. 34Ð39, Jan. 1959.
-\bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, ÒA clustering technique for digital communications channel equalization using radial basis function networks,Ó IEEE Trans. Neural Networks, vol. 4, pp. 570Ð578, July 1993.
+\bibitem{c9}Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews." 
+ Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle,     Washington, USA, 
+\bibitem{c10}Bing Liu, Minqing Hu and Junsheng Cheng. "Opinion Observer: Analyzing 
+ and Comparing Opinions on the Web." Proceedings of the 14th 
+International World Wide Web conference (WWW-2005), May 10-14,  2005, Chiba, Japan.
+\bibitem{c11}Hutto, C.J. and Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on
+Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 \bibitem{c12} R. W. Lucky, ÒAutomatic equalization for digital communication,Ó Bell Syst. Tech. J., vol. 44, no. 4, pp. 547Ð588, Apr. 1965.
 \bibitem{c13} S. P. Bingulac, ÒOn the compatibility of adaptive controllers (Published Conference Proceedings style),Ó in Proc. 4th Annu. Allerton Conf. Circuits and Systems Theory, New York, 1994, pp. 8Ð16.
 \bibitem{c14} G. R. Faulhaber, ÒDesign of service systems with priority reservation,Ó in Conf. Rec. 1995 IEEE Int. Conf. Communications, pp. 3Ð8.
