@@ -116,10 +116,37 @@ In our study we are creating the domain specific lexicon with the help of SentiW
 
 We create a bag of words from a corpus of 417 documents all belonging to a particular(financial) domain tagged with their part of speech.Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon.We have also taken care of the fact that a word can be expressed in more than one sense or part of speech.The sense which is only appropriate to our domain has been selected.For example, \textbf{``critical''} being an adjective is represented in total 7 senses in SentiWordNet 3.0 comprising of positive,negative and neutral polarity. The first sense of the word \textbf{``critical''} represents ``marked by a tendency to find and call attention to errors and flaws'' having 0.5 negative polarity. The second sense shows neutral character of the word by meaning ``at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction'' while the positive sense is depicted by ``forming or having the nature of a turning point or crisis''. So we have selected the 6th sense of the word which suits our domain with 0.125 negative score that means "being in or verging on a state of crisis or emergency".
 
-\subsubsection{Non-neutral Words}
+\subsubsection{Non-neutral Words and Domain Specific Scoring}
 After the addition of words with their respective polarity,part of speech and sense we end up with 4890 words in our lexicon among which most of them are neutral words. But the words that are termed as neutral by SentiWordNet 3.0 may differ in polarity in a specific domain. For example, \textbf{``growth''} in SentiWordNet 3.0 is neutral in all senses but in our domain ``growth'' mostly appears with ``GDP growth'',``economic growth'',``revenue growth accelerated'' or ``credit growth''. Likewise the word \textbf{``NPA''} is neutral in SentiWordNet 3.0 being an abbreviation for ``new people's army'' whereas in a financial domain it stands for Non-Performing Asset. Similarly, words like inflation, recession, dwindling, lagging, losses, obstacle, shutdown, protest, etc. all are termed as neutral by SentiWordNet 3.0. There are 85 such words which are not neutral in our domain.
 
-We adopt a simple and popular information retrieval technique to assign score to the words that are not neutral in our domain called Term Frequency-Inverse Document Frequency(Tf-Idf).
+We adopt a simple and popular information retrieval technique to assign score to the words that are not neutral in our domain called \textbf{TF-IDF} (Term Frequency-Inverse
+Document Frequency)\cite{c7}. Term frequency is defined as the total number of times a given word appears
+in a document divided by the total number of words in the document. It may also be defined as the
+frequency of the occurrence of certain terms in a given document. Inverse Document Frequency is defined as the
+document count that lies in the corpus in which a given term coexists.
+It can be computed by finding the logarithm of the total number of documents
+present in a given corpus divided by the number of documents in which a particular
+token exists.
+
+Term Frequency\textbf{(TF)} is calculated as follows:
+
+	tf(term, document)=(word, document)/ length(document)
+
+	
+Inverse Document Frequency \textbf{(IDF)} is calculated as follows:
+
+	idf(term,corpus)= log(length(corpus)/ 	count(document containing term, corpus)
+
+
+The \textbf{TF-IDF} score can be obtained by multiplying both scores. 
+
+	\textbf{TF-IDF}(term, document, corpus) = TF(term ,document)
+	 * IDF(term, corpus)
+	 
+After classifying those neutral words as positive or negative we add them to our lexicon with their respective TF-IDF scores.
+
+\subsection{Sentiment Intensity Calculator}
+Our main objective is to measure the accuracy of the proposed domain-specific lexicon. We propose an algorithm to analyze the sentiment of a sentence by bigram approach. The selection of the bigrams from a sentence for analysing the sentiment depends upon the part of speech which can be polar or can have polarity(mostly adjectives, nouns, verbs and adverbs). For POS tagging we use Stanford NLP Tagger \cite{c8}.
 
 \section{EXPERIMENT}
 
@@ -226,8 +253,8 @@ http://www.tribuneindia.com/
 \bibitem{c5} 
 https://www.thestatesman.com/
 \bibitem{c6} http://newspaper.readthedocs.io/en/latest/
-\bibitem{c7} C. J. Kaufman, Rocky Mountain Research Lab., Boulder, CO, private communication, May 1995.
-\bibitem{c8} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ÒElectron spectroscopy studies on magneto-optical media and plastic substrate interfaces(Translation Journals style),Ó IEEE Transl. J. Magn.Jpn., vol. 2, Aug. 1987, pp. 740Ð741 [Dig. 9th Annu. Conf. Magnetics Japan, 1982, p. 301].
+\bibitem{c7}Deepti Chopra,Nisheeth Joshi,Iti Mathur, Mastering Natural Language Processing with Python, 2016.
+\bibitem{c8} Kristina Toutanova, Dan Klein, Christopher Manning, and Yoram Singer. 2003. Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network. In Proceedings of HLT-NAACL 2003, pp. 252-259.
 \bibitem{c9} M. Young, The Techincal Writers Handbook.  Mill Valley, CA: University Science, 1989.
 \bibitem{c10} J. U. Duncombe, ÒInfrared navigationÑPart I: An assessment of feasibility (Periodical style),Ó IEEE Trans. Electron Devices, vol. ED-11, pp. 34Ð39, Jan. 1959.
 \bibitem{c11} S. Chen, B. Mulgrew, and P. M. Grant, ÒA clustering technique for digital communications channel equalization using radial basis function networks,Ó IEEE Trans. Neural Networks, vol. 4, pp. 570Ð578, July 1993.
