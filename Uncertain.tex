@@ -84,8 +84,21 @@ Our approach consists of two tasks: first is the creation of a domain-specific p
 \subsection{Domain-Specific Lexicon Generation}
 In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}. SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
 
-We create a bag of words from a corpus of 417 documents all belonging to a particular(financial) domain tagged with their part of speech.Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon.We have also taken care of the fact that a word can be expressed in more than one sense or part of speech.The sense which is only appropriate to our domain has been selected.For example, \textbf{``critical''} being an adjective is represented in total 7 senses in SentiWordNet 3.0 comprising of positive,negative and neutral polarity. The first sense of the word \textbf{``critical''} represents ``marked by a tendency to find and call attention to errors and flaws'' having 0.5 negative polarity. The second sense shows neutral character of the word by meaning ``at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction'' while the positive sense is depicted by ``forming or having the nature of a turning point or crisis''. So we have selected the 6th sense of the word which suits our domain with 0.125 negative score that means "being in or verging on a state of crisis or emergency".
-
+We create a bag of words from a corpus of 417 documents all belonging to a particular(\textbf{financial}) domain tagged with their part of speech. Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon. The following algorithm depicts the above proposed approach:  
+\begin{algorithm}
+	\SetAlgoLined
+	\textbf{Input:} Domain-Specific News Corpus\\
+	\KwResult{Domain-Specific lexicon with polarity}
+	TaggedWords = POS-TAG(Corpus)\\
+	\ForEach{word,tag in TaggedWords}{
+		
+	swn\_score=SentiWordNet(swn\_synset(word),tag)\\
+	Add\_to\_Lexicon(tag, word, pos\_score(swn\_score), neg\_score(swn\_score))
+}	
+	
+	\caption{Creation of domain-specific lexicon with polarity}
+\end{algorithm}
+\\We have also taken care of the fact that a word can be expressed in more than one sense or part of speech.The sense which is only appropriate to our domain has been selected. For example, \textbf{``critical''} being an adjective is represented in total 7 senses in SentiWordNet 3.0 comprising of positive,negative and neutral polarity. The first sense of the word \textbf{``critical''} represents ``marked by a tendency to find and call attention to errors and flaws'' having 0.5 negative polarity. The second sense shows neutral character of the word by meaning ``at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction'' while the positive sense is depicted by ``forming or having the nature of a turning point or crisis''. So we have selected the 6th sense of the word which suits our domain with 0.125 negative score that means "being in or verging on a state of crisis or emergency".
 \subsubsection{Non-neutral Words and Domain Specific Scoring}
 After the addition of words with their respective polarity,part of speech and sense we end up with 4890 words in our lexicon among which most of them are neutral words. But the words that are termed as neutral by SentiWordNet 3.0 may differ in polarity in a specific domain. For example, \textbf{``growth''} in SentiWordNet 3.0 is neutral in all senses but in our domain ``growth'' mostly appears with ``GDP growth'',``economic growth'',``revenue growth accelerated'' or ``credit growth''. Likewise the word \textbf{``NPA''} is neutral in SentiWordNet 3.0 being an abbreviation for ``new people's army'' whereas in a financial domain it stands for Non-Performing Asset. Similarly, words like inflation, recession, dwindling, lagging, losses, obstacle, shutdown, protest, etc. all are termed as neutral by SentiWordNet 3.0. There are 85 such words which are not neutral in our domain.
 
