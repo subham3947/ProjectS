@@ -5,7 +5,7 @@
 %documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
                                                           % if you need a4paper
 \documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
-                                                          % paper
+                                                        % paper
 
 % See the \addtolength command later in the file to balance the column lengths
 % on the last page of the document
@@ -19,7 +19,7 @@
 %\usepackage{times} % assumes new font selection scheme installed
 %\usepackage{amsmath} % assumes amsmath package installed
 %\usepackage{amssymb}  % assumes amsmath package installed
-\usepackage[options ]{algorithm2e}
+\usepackage[norelsize]{algorithm2e}
 \title{\LARGE \bf
 Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
 }
@@ -79,36 +79,6 @@ Before you begin to format your paper, first write and save the content as a sep
 
 Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
 
-\subsection{Abbreviations and Acronyms} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
-
-\subsection{Equations}
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
-
-$$
-\alpha + \beta = \chi \eqno{(1)}
-$$
-
-Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use Ò(1)Ó, not ÒEq. (1)Ó or Òequation (1)Ó, except at the beginning of a sentence: ÒEquation (1) is . . .Ó
-
-\subsection{Some Common Mistakes}
-\begin{itemize}
-
-
-\item The word ÒdataÓ is plural, not singular.
-\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ÒoÓ.
-\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ÒinsetÓ, not an ÒinsertÓ. The word alternatively is preferred to the word ÒalternatelyÓ (unless you really mean something that alternates).
-\item Do not use the word ÒessentiallyÓ to mean ÒapproximatelyÓ or ÒeffectivelyÓ.
-\item In your paper title, if the words Òthat usesÓ can accurately replace the word ÒusingÓ, capitalize the ÒuÓ; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ÒaffectÓ and ÒeffectÓ, ÒcomplementÓ and ÒcomplimentÓ, ÒdiscreetÓ and ÒdiscreteÓ, ÒprincipalÓ and ÒprincipleÓ.
-\item Do not confuse ÒimplyÓ and ÒinferÓ.
-\item The prefix ÒnonÓ is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ÒetÓ in the Latin abbreviation Òet al.Ó.
-\item The abbreviation Òi.e.Ó means Òthat isÓ, and the abbreviation Òe.g.Ó means Òfor exampleÓ.
-
-\end{itemize}
-
-
 \section{PROPOSED METHODOLOGY}
 Our approach consists of two tasks: first is the creation of a domain-specific polarity lexicon with a polarity weight assigned to each word as positive,negative or neutral using a news corpora. Second is proposing a sentiment calculator to evaluate the created lexicon.
 \subsection{Domain-Specific Lexicon Generation}
@@ -152,25 +122,39 @@ The proposed algorithm only accepts the bigram ending with an adjective, a noun,
 In a sentence the adjectives are the most relevant part of speech for sentiment analysis. The nouns carry less importance than the adjectives but still there are nouns which are polar and should be considered. For nouns, we have created a list which are polar from Bing Liu's Opinion Lexicon \cite{c9,c10}. Adverbs like comparative and superlative also have relevance for analysing the sentiment. 
 \subsubsection{Dealing with Negation}In our algorithm we apply the simple approach of inverting or flipping the polarity of the word next to the negating word. But there can be a lot of negating words apart from \textit{no, not, never, nope, }etc. Also words like \textit{anti, against or undue} have an almost negating effect on the word next to it. So we have created a list of negating words from the popular NLTK Sentiment Analysis Tool VADER \cite{c11} documentation.
 \subsubsection{Intensifiers or Boosters}
-Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters like \textit{absolutely, amazingly, fabulously} and negative boosters like \textit{badly, hardly, marginally}. Again we create a dictionary of the booster words from \cite{c11} along with their intensities from \cite{c1}.
+Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters like \textit{absolutely, amazingly, fabulously} and negative boosters like \textit{badly, hardly, marginally}. Again we create a dictionary of the booster words from \cite{c11} along with their intensities from \cite{c1}. The positive boosters have positive intensities whereas negtaive boosters are assigned negative intensities.
 \subsubsection{Calculating the Sentiment Score}
 We adopt here the bigram approach to calculate the sentiment score of a sentence. Only those bigrams are selected that end with adjectives, nouns, adverbs(comparative or superlative) and verbs(present participle, past participle and past tense).
 \begin{algorithm}
 	\SetAlgoLined
-	\textbf{Input:} Tweets\\
-	\KwResult{Write here the result }
-	initialization\;
-	\While{While condition}{
-		instructions\;
-		\eIf{condition}{
-			instructions1\;
-			instructions2\;
-		}{
-			instructions3\;
-		}
+	\textbf{Input:} Preprocessed tweets (T)\\
+	\KwResult{Sentiment Score for each tweet }
+	neg=[``never'',``no'',``none'',``nope'', ``nor'',...]\\
+	booster=[``absolutely'',``amazingly'',``awfully'',...]\\
+	score=0.0\;
+	\ForEach{bigram($ {w_i} $ \textbf{,} $ {w_j} $ of t)}{
+	pos-tag($ {w_i} $ \textbf{,} $ {w_j} $)\;
+	\If{pos($ {w_j} $) is adjective,adverb,noun,verb}
+	{
+	\If{${w_i}$ is a booster word}
+	{ \If{${w_i}$ is +ve booster and polarity(${w_j}$) is +ve}{score+=intensity[booster]+polarity(${w_j}$)}
+	\If{${w_i}$ is +ve booster and polarity(${w_j}$) is -ve}{score+=polarity(${w_j}$)-intensity[booster]}
+	\If{${w_i}$ is -ve booster}{score+=polarity(${w_j}$)-intensity[booster]}
+	
 	}
-	\caption{Calculating the Sentiment Score}
-\end{algorithm}
+	\If{${w_i}$ is a negating word}
+	{score+=(-polarity($ {w_j} $))}
+	\Else{score+=polarity($ {w_i} $)+polarity($ {w_j} $)}	
+	
+}
+		
+}
+	
+		
+\caption{Calculating the Sentiment Score}	
+	\end{algorithm}
+
+
 \section{EXPERIMENT}
 
 \subsection{Dataset}
@@ -213,6 +197,35 @@ A conclusion section is not required. Although a conclusion may review the main 
 Appendixes should appear before the acknowledgment.
 
 \section*{ACKNOWLEDGMENT}
+
+\subsection{Abbreviations and Acronyms} Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
+
+\subsection{Equations}
+The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman or the Symbol font (please no other font). To create multileveled equations, it may be necessary to treat the equation as a graphic and insert it into the text after your paper is styled. Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in (1), using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
+
+$$
+\alpha + \beta = \chi \eqno{(1)}
+$$
+
+Note that the equation is centered using a center tab stop. Be sure that the symbols in your equation have been defined before or immediately following the equation. Use Ò(1)Ó, not ÒEq. (1)Ó or Òequation (1)Ó, except at the beginning of a sentence: ÒEquation (1) is . . .Ó
+
+\subsection{Some Common Mistakes}
+\begin{itemize}
+	
+	
+	\item The word ÒdataÓ is plural, not singular.
+	\item The subscript for the permeability of vacuum ?0, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ÒoÓ.
+	\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+	\item A graph within a graph is an ÒinsetÓ, not an ÒinsertÓ. The word alternatively is preferred to the word ÒalternatelyÓ (unless you really mean something that alternates).
+	\item Do not use the word ÒessentiallyÓ to mean ÒapproximatelyÓ or ÒeffectivelyÓ.
+	\item In your paper title, if the words Òthat usesÓ can accurately replace the word ÒusingÓ, capitalize the ÒuÓ; if not, keep using lower-cased.
+	\item Be aware of the different meanings of the homophones ÒaffectÓ and ÒeffectÓ, ÒcomplementÓ and ÒcomplimentÓ, ÒdiscreetÓ and ÒdiscreteÓ, ÒprincipalÓ and ÒprincipleÓ.
+	\item Do not confuse ÒimplyÓ and ÒinferÓ.
+	\item The prefix ÒnonÓ is not a word; it should be joined to the word it modifies, usually without a hyphen.
+	\item There is no period after the ÒetÓ in the Latin abbreviation Òet al.Ó.
+	\item The abbreviation Òi.e.Ó means Òthat isÓ, and the abbreviation Òe.g.Ó means Òfor exampleÓ.
+	
+\end{itemize}
 
 The preferred spelling of the word ÒacknowledgmentÓ in America is without an ÒeÓ after the ÒgÓ. Avoid the stilted expression, ÒOne of us (R. B. G.) thanks . . .Ó  Instead, try ÒR. B. G. thanksÓ. Put sponsor acknowledgments in the unnumbered footnote on the first page.
 
