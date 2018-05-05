@@ -19,7 +19,7 @@
 %\usepackage{times} % assumes new font selection scheme installed
 %\usepackage{amsmath} % assumes amsmath package installed
 %\usepackage{amssymb}  % assumes amsmath package installed
-
+\usepackage[options ]{algorithm2e}
 \title{\LARGE \bf
 Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
 }
@@ -112,7 +112,7 @@ Note that the equation is centered using a center tab stop. Be sure that the sym
 \section{PROPOSED METHODOLOGY}
 Our approach consists of two tasks: first is the creation of a domain-specific polarity lexicon with a polarity weight assigned to each word as positive,negative or neutral using a news corpora. Second is proposing a sentiment calculator to evaluate the created lexicon.
 \subsection{Domain-Specific Lexicon Generation}
-In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}.SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
+In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}. SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
 
 We create a bag of words from a corpus of 417 documents all belonging to a particular(financial) domain tagged with their part of speech.Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon.We have also taken care of the fact that a word can be expressed in more than one sense or part of speech.The sense which is only appropriate to our domain has been selected.For example, \textbf{``critical''} being an adjective is represented in total 7 senses in SentiWordNet 3.0 comprising of positive,negative and neutral polarity. The first sense of the word \textbf{``critical''} represents ``marked by a tendency to find and call attention to errors and flaws'' having 0.5 negative polarity. The second sense shows neutral character of the word by meaning ``at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction'' while the positive sense is depicted by ``forming or having the nature of a turning point or crisis''. So we have selected the 6th sense of the word which suits our domain with 0.125 negative score that means "being in or verging on a state of crisis or emergency".
 
@@ -130,12 +130,12 @@ token exists.
 
 Term Frequency\textbf{(TF)} is calculated as follows:
 
-	tf(term, document)=(word, document)/ length(document)
+	tf(term, document) = count(word, document)/ length(document)
 
 	
 Inverse Document Frequency \textbf{(IDF)} is calculated as follows:
 
-	idf(term,corpus)= log(length(corpus)/ 	count(document containing term, corpus)
+	idf(term,corpus) = log(length(corpus)/ 	count(document containing term, corpus)
 
 
 The \textbf{TF-IDF} score can be obtained by multiplying both scores. 
@@ -153,6 +153,24 @@ In a sentence the adjectives are the most relevant part of speech for sentiment 
 \subsubsection{Dealing with Negation}In our algorithm we apply the simple approach of inverting or flipping the polarity of the word next to the negating word. But there can be a lot of negating words apart from \textit{no, not, never, nope, }etc. Also words like \textit{anti, against or undue} have an almost negating effect on the word next to it. So we have created a list of negating words from the popular NLTK Sentiment Analysis Tool VADER \cite{c11} documentation.
 \subsubsection{Intensifiers or Boosters}
 Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters like \textit{absolutely, amazingly, fabulously} and negative boosters like \textit{badly, hardly, marginally}. Again we create a dictionary of the booster words from \cite{c11} along with their intensities from \cite{c1}.
+\subsubsection{Calculating the Sentiment Score}
+We adopt here the bigram approach to calculate the sentiment score of a sentence. Only those bigrams are selected that end with adjectives, nouns, adverbs(comparative or superlative) and verbs(present participle, past participle and past tense).
+\begin{algorithm}
+	\SetAlgoLined
+	\textbf{Input:} Tweets\\
+	\KwResult{Write here the result }
+	initialization\;
+	\While{While condition}{
+		instructions\;
+		\eIf{condition}{
+			instructions1\;
+			instructions2\;
+		}{
+			instructions3\;
+		}
+	}
+	\caption{Calculating the Sentiment Score}
+\end{algorithm}
 \section{EXPERIMENT}
 
 \subsection{Dataset}
