@@ -20,6 +20,12 @@
 %\usepackage{amsmath} % assumes amsmath package installed
 %\usepackage{amssymb}  % assumes amsmath package installed
 \usepackage[norelsize]{algorithm2e}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
 \title{\LARGE \bf
 Preparation of Papers for IEEE Sponsored Conferences \& Symposia*
 }
@@ -78,13 +84,22 @@ The template is used to format your paper and style the text. All margins, colum
 Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
 
 Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
+Before you begin to format your paper, first write and save the content as a separate text file. Keep your text and graphic files separate until after the text has been formatted and styled. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you.
 
+Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[width=\linewidth]{boat.jpg}
+	\caption{System Framework}
+	\label{fig:boat1}
+\end{figure*}
 \section{PROPOSED METHODOLOGY}
 Our approach consists of two tasks: first is the creation of a domain-specific polarity lexicon with a polarity weight assigned to each word as positive,negative or neutral using a news corpora. Second is proposing a sentiment calculator to evaluate the created lexicon.
+
 \subsection{Domain-Specific Lexicon Generation}
 In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}. SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
 
-We create a bag of words from a corpus of 417 documents all belonging to a particular(\textbf{financial}) domain tagged with their part of speech. Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon. The following algorithm depicts the above proposed approach:  
+We create a bag of words from a corpus of 417 documents all belonging to a particular(\textbf{financial}) domain tagged with their part of speech. Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon using \cite{c1}. The following algorithm depicts the above proposed approach:  
 \begin{algorithm}
 	\SetAlgoLined
 	\textbf{Input:} Domain-Specific News Corpus\\
@@ -138,7 +153,7 @@ In a sentence the adjectives are the most relevant part of speech for sentiment 
 Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters like \textit{absolutely, amazingly, fabulously} and negative boosters like \textit{badly, hardly, marginally}. Again we create a dictionary of the booster words from \cite{c11} along with their intensities from \cite{c1}. The positive boosters have positive intensities whereas negtaive boosters are assigned negative intensities.
 \subsubsection{Calculating the Sentiment Score}
 We adopt here the bigram approach to calculate the sentiment score of a sentence. Only those bigrams are selected that end with adjectives, nouns, adverbs(comparative or superlative) and verbs(present participle, past participle and past tense).
-\begin{algorithm}
+\begin{algorithm}[h!]
 	\SetAlgoLined
 	\textbf{Input:} Preprocessed tweets (T)\\
 	\KwResult{Sentiment Score for each tweet }
@@ -168,7 +183,9 @@ We adopt here the bigram approach to calculate the sentiment score of a sentence
 	\end{algorithm}
 
 
-\section{EXPERIMENT}
+Algorithm 2 depicts the procedure of bigram selection and sentiment calculation dealing along with negation and booster words.
+
+\section{EVALUATION AND RESULT}
 
 \subsection{Dataset}
 
@@ -181,9 +198,49 @@ The data was acquired from four popular Indian newspapers namely, The Economic T
 \subsubsection{Twitter Dataset}
 This dataset was created from Twitter, a popular social networking service where users post their messages and opinion called tweets.The tweets collected were based on GST which can depict the public sentiment after the launch of GST in India. The timeline of the collected tweets was from 1st July, 2017(GST launch) till 31st July, 2017.
 
-
+\subsubsection{Neutral Words Dataset}
 \subsection{Evaluation}
-The domain-specific lexicon created from the news corpus was evaluated on the twitter dataset by using the sentiment measurer introduced in Section 0.0. The sentiment of each tweet was measured using both the domain-specific and SentiWordNet 3.0 lexicon to compare the difference between the intensities of the sentiment values by the two lexicon.
+The domain-specific lexicon created from the news corpus was evaluated on the twitter dataset by using the sentiment measurer introduced in Section 3.2.4. The sentiment of each tweet was measured using both the domain-specific and SentiWordNet 3.0 lexicon to compare the difference between the intensities of the sentiment values by the two lexicon.
+
+\subsection{Result}
+\subsubsection{Comparison between SentiWordNet 3.0 and the proposed Domain Specific Lexicon}
+
+To clearly demonstrate the effectiveness of the proposed domain-specific lexicon, a case study is represented with some tweets and their sentiment scores calculated from SentiWorNet 3.0 and the proposed lexicon separately.
+
+\begin{table}[h!]
+	\caption{Comparison of SentiWordNet and Domain-Specific Lexicon.}
+	\label{table_example}
+	%\begin{center}
+		\begin{tabular}{|L{3cm}|C{2cm}|R{1.5cm}|}
+			\hline
+		\begin{center}
+			\textbf{Tweets}
+		\end{center}&\begin{center}	\textbf{SentiWordNet}\end{center}&\begin{center}\textbf{Domain-Specific}\end{center} \\
+			\hline
+		U know u r abt to witness \#GST\_Mess when a common citizen is forced to pay 28\% \#GST on BANANAS. &0.625 & -0.125\\
+		\hline
+		
+		\end{tabular}
+%	\end{center}
+\end{table}
+\begin{table}[h!]
+		\caption{Measure of Accuracy}
+	\label{table 2}
+	\begin{tabular}{ r|c|c| }
+		\multicolumn{1}{r}{}
+		&  \multicolumn{1}{c}{\textbf{SentiWordNet}}
+		& \multicolumn{1}{c}{\textbf{Domain-Specific}} \\
+		\cline{2-3}
+		\textbf{Precision} & 80\% & 80\% \\
+		\cline{2-3}
+		\textbf{Recall} & 80\% & 80\% \\
+		\cline{2-3}
+		\textbf{F-Score} & 80\% & 80\% \\
+		\cline{2-3}
+	\end{tabular}
+	
+\end{table}
+
 
 \section{CONCLUSIONS}
 
@@ -281,6 +338,7 @@ Positioning Figures and Tables: Place figures and tables at the top and bottom o
 
 
 Figure Labels: Use 8 point Times New Roman for Figure labels. Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ÒMagnetizationÓ, or ÒMagnetization, MÓ, not just ÒMÓ. If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ÒMagnetization (A/m)Ó or ÒMagnetization {A[m(1)]}Ó, not just ÒA/mÓ. Do not label axes with a ratio of quantities and units. For example, write ÒTemperature (K)Ó, not ÒTemperature/K.Ó
+
 
 
 
