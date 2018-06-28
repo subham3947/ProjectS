@@ -1,0 +1,353 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[norelsize]{algorithm2e}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Enhancing Domain-Specific Lexicon based Sentiment Analysis: A Case Study on GST\\
+%{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+%should not be used}
+}
+
+	\author{
+		\IEEEauthorblockN{\IEEEauthorblockN{Subham Yadav\IEEEauthorrefmark{1},
+				Dr. Madhulina Sarkar\IEEEauthorrefmark{2}
+				}
+			\IEEEauthorblockA{Department of Computer Science \& Engineering\\
+				Government College of Engineering \& Textile Technology \\
+				Berhampore, India\\
+				Email:\IEEEauthorrefmark{1}yadavsubham72@gmail.com,
+				 \IEEEauthorrefmark{2}madhulina.sarkar@gmail.com}}
+	}
+
+\maketitle
+
+\begin{abstract}
+Sentiment analysis has become a vital classification task because of the massive content over the Internet. Sentiment analysis using lexicon based approach  have been used to successfully analyse the sentiment of the user. However, some general-purpose lexicons like SentiWordNet contains words that are objective but they exhibit some polarity in a particular domain. Hence analysing sentiment becomes difficult and inaccurate as some words being polar in a speific domain are misunderstood as neutral words. This
+paper, proposes a strategy to construct a domain-specific lexicon from a news corpora. For the domain-specific words that are objective in SentiWordNet  we adopt an information retrieval technique to assign them with polarity.	We also introduce an algorithm using bigrams to analyse the sentiment for evaluating the effectiveness of the proposed lexicon.  The experiment showed that our lexicon is effective than SentiWordNet in the particular domain and it improves the accuracy of the sentiment classification.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Sentiment analysis, Lexicon, Corpora, SentiWordNet, Domain Specific, Part of Speech, Information Retrieval.
+\end{IEEEkeywords}
+
+\section{Introduction}
+The main objective of sentiment analysis is to determine  the feelings, emotions and opinions written in a
+text. The sentiments are based on the meaning of words used in text according to different domains and situations. There are two approaches for finding the sentiment polarity at a document	or sentence level. Firstly, machine learning techniques are based on training corpora labeled with polarity tag and, second, strategies are based on lexicons. Lexicon based approaches are the most popular in sentiment analysis, and they play a key role in the field. Lexicon based approaches mainly focus on resolving the ambiguity of polar words that are domain dependent. A word can be objective in a particular domain while in another domain it can reflect a subjective character. A lexicon is a dictionary consisting of	words along with their polarity value to indicate the positive or negative sentiments. Some general-purpose lexicons like SentiWordNet \cite{c1} contains words with their part of speech, polarity value, synonyms as well as their senses. SentiWordNet is an extension of WordNet containing words with their synonyms. Basically, SentiWordNet is WordNet along with sentiment score. But still there are some words in SentiWordNet that are neutral in all senses and domains. For instance, the word "growth" is a neutral word in SentiWordNet but when the word "growth" is associated with "GDP" or "economy" it has some positive character in the financial domain. This is the main reason behind using a domain-specfic lexicon to avoid misunderstanding of sentiment according to the domain-specific context.
+
+We propose a simple approach for the creation of a domain-specific lexicon using a news corpora along SentiWordnet \cite{c1}. The domain selected for this study is the GST launch in India that indicates a financial domain. After creation of the lexicon we use the lexicon for the sentiment classification of tweets that depicts public sentiment on GST by proposing an algorithm based on bigram model. The results are compared with that of SentiWordNet to determine the accuracy of the proposed domain specific-lexicon.
+
+
+\section{RELATED WORK}
+In this section, we discuss some of the relevant studies conducted on the creation of domain specific sentiment lexicons using corpus-based strategies and revising the polarity of the words to improve sentiment analysis.
+
+Asghar et al.
+(2016) \cite{c2} created health-related sentiment lexicon by
+proposing hybrid approach based on boot-strapping concepts (e.g., seed list creation,
+lexicon expansion and redundant words filtering), SWN, and corpus-based techniques
+(e.g., probability-based improved term weighting measures).The main objective of creating health-related sentiment lexicon was to develop a
+machine readable lexical repository for storing drug-related concepts along with their
+correct sentiment class and score, which can be used for developing health-related sentiment
+analysis applications.
+
+Hamilton et al. (2016) \cite{c3} introduced SentProp, a framework to learn accurate sentiment lexicons from small sets of seed words and domain-specific corpora. SentProp was designed to maintain accurate performance when using modestly-sized domain-specific corpora (~$ 10^{7} $ tokens), and it provides confidence scores along with the learned lexicons, which allows researchers to quantify uncertainty in a principled manner.
+
+Almatarneh and Gamallo (2017) \cite{c4} proposed a method for automatically building polarity lexicons
+from corpora. They focussed on the construction of a domain-specific
+lexicon from a corpus of movie reviews and its use in the task of sentiment
+analysis. The experiments reported   that their automatic
+resource outperforms other manual general-purpose lexicons when they are used
+as features of a supervised sentiment classifer.    
+
+Georgios Paltoglou and Mike Thelwall (2010) \cite{c5}  examined whether term weighting
+functions adopted from Information Retrieval
+(IR) based on the standard \textbf{\textit{tf.idf}} formula and
+adapted to the particular setting of sentiment analysis
+can help classification accuracy. They demonstrated
+that variants of the original tf.idf weighting
+scheme provides significant increase in classification
+performance.
+
+
+Pak et al. (2014) \cite{c6} proposed a simple technique for tuning the weighting scheme that
+improved the classification accuracy. The technique was based on the normalization of
+term weights by their average term frequency across the document collection. The motivation
+behind this procedure was based on an observation that terms expressing an author’s
+attitude to the described topic are unique in a document. While other terms that
+are not important for the classification decision are more frequent.    
+
+Taboada et al.(2011) \cite{c7} presented a lexicon-based approach to extract sentiment from text. The Semantic Orientation
+CALculator(SO-CAL) used dictionaries of words annotated with their semantic orientation
+(polarity and strength), and incorporates intensification and negation. SO-CAL is applied to the
+polarity classification task, the process of assigning a positive or negative label to a text that
+captures the text’s opinion towards its main subject matter. They show that SO-CAL’s performance
+is consistent across domains and on completely unseen data.
+\begin{figure*}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{framework.jpg}
+	\caption{System Framework}
+	\label{fig:framework}
+\end{figure*}
+
+
+	\section{PROPOSED METHODOLOGY}
+Our approach consists of two tasks: first is the creation of a domain-specific polarity lexicon with a polarity weight assigned to each word as positive,negative or neutral using a news corpora. Second is proposing a sentiment calculator to evaluate the created lexicon. The overall proposed system framework is shown in Figure 1.
+
+\subsection{Domain-Specific Lexicon Generation}
+In our study we are creating the domain specific lexicon with the help of SentiWordNet 3.0 \cite{c1}. SentiWordNet 3.0 is the most famous and popular lexicon for sentiment analysis. It contains more than 1,17,600 words  there meanings, part of speech  and the degree of positivity and negativity of the word, ranging from 0 to 1.
+
+We create a bag of words from a corpus of 417 documents all belonging to a particular(\textbf{financial}) domain tagged with their part of speech. Then we add the words along wih their part-of-speech and their degree of positivity or negativity in our lexicon using \cite{c1}. Algorithm 1 depicts the above proposed approach:  
+\begin{algorithm}
+	\SetAlgoLined
+	\textbf{Input:} Domain-Specific News Corpus\\
+	\KwResult{Domain-Specific lexicon with polarity}
+	TaggedWords = POS-TAG(Corpus)\\
+	\ForEach{word,tag in TaggedWords}{
+		
+		swn\_score=SentiWordNet(swn\_synset(word),tag)\\
+		Add\_to\_Lexicon(tag, word, pos\_score(swn\_score), neg\_score(swn\_score))
+	}	
+	
+	\caption{Creation of domain-specific lexicon with polarity}
+\end{algorithm}
+\subsubsection{Non-neutral Words and Domain Specific Scoring}
+After the addition of words with their respective polarity, part of speech and sense we end up with 4890 words in our lexicon among which most of them are neutral words. But the words that are termed as neutral by SentiWordNet 3.0 may differ in polarity in a specific domain. For example, \textbf{``growth''} in SentiWordNet 3.0 is neutral in all senses but in our domain ``growth'' mostly appears with ``GDP growth'',``economic growth'',``revenue growth accelerated'' or ``credit growth''. Likewise the word \textbf{``NPA''} is neutral in SentiWordNet 3.0 being an abbreviation for ``new people's army'' whereas in a financial domain it stands for Non-Performing Asset. Similarly, words like inflation, recession, dwindling, lagging, losses, obstacle, shutdown, protest, etc. all are termed as neutral by SentiWordNet 3.0. There are 85 such words which are not neutral in our domain.
+
+\textbf{Word Sense Disambiguation.}We have taken care of the fact that a word can be expressed in more than one sense or part of speech.The sense which is only appropriate to our domain has been selected. For example, \textbf{``critical''} being an adjective is represented in total 7 senses in SentiWordNet 3.0 comprising of positive, negative and neutral polarity. The first sense of the word \textbf{``critical''} represents ``marked by a tendency to find and call attention to errors and flaws'' having 0.5 negative polarity. The second sense shows neutral character of the word by meaning ``at or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction'' while the positive sense is depicted by ``forming or having the nature of a turning point or crisis''. So we have selected the 6th sense of the word which suits our domain with 0.125 negative score that means "being in or verging on a state of crisis or emergency".
+
+We adopt a simple and popular information retrieval technique to assign score to the words that are not neutral in our domain called \textbf{TF-IDF} (Term Frequency-Inverse
+Document Frequency)\cite{c12}. Term frequency is defined as the total number of times a given word appears
+in a document divided by the total number of terms in the document. It may also be defined as the
+frequency of the occurrence of certain terms in a given document. Inverse Document Frequency is defined as the
+document count that lies in the corpus in which a given term coexists.
+It can be computed by finding the logarithm of the total number of documents
+present in a given corpus divided by the number of documents in which a particular
+token exists.
+
+Term Frequency\textbf{(TF)} is calculated as follows:
+
+tf(term, document) = count(word, document)/ length(document)
+
+
+Inverse Document Frequency \textbf{(IDF)} is calculated as follows:
+
+idf(term,corpus) = log(length(corpus))/ 	count(document containing term, corpus)
+
+
+The \textbf{TF-IDF} score can be obtained by multiplying both scores. 
+
+\textbf{TF-IDF}(term, document, corpus) = TF(term ,document)
+* IDF(term, corpus)
+
+After classifying those neutral words as positive or negative we add them to our lexicon with their respective TF-IDF scores.
+
+\subsection{Sentiment Intensity Calculator}
+Our main objective is to measure the accuracy of the proposed domain-specific lexicon. We propose an algorithm to analyze the sentiment of a sentence by bigram approach. The selection of the bigrams from a sentence for analysing the sentiment depends upon the part of speech which can be polar or can have polarity(mostly adjectives, nouns, verbs and adverbs). For POS tagging we use Stanford NLP Tagger \cite{c13}.
+\subsubsection{Part of Speech}
+The proposed algorithm only accepts the bigram ending with an adjective, a noun, an adverb or a verb.
+In a sentence the adjectives are the most relevant part of speech for sentiment analysis. The nouns carry less importance than the adjectives but still there are nouns which are polar and should be considered. For nouns, we have created a list which are polar from Bing Liu's Opinion Lexicon \cite{c14,c15}. Adverbs like comparative and superlative also have relevance for analysing the sentiment. 
+\subsubsection{Dealing with Negation}In our algorithm we apply the simple approach of inverting or flipping the polarity of the word next to the negating word. But there can be a lot of negating words apart from \textit{no, not, never, nope, }etc. Also words like \textit{anti, against or undue} have an almost negating effect on the word next to it. So we have created a list of negating words from the popular NLTK Sentiment Analysis Tool VADER \cite{c16} documentation.
+\subsubsection{Intensifiers or Boosters}
+Words that intensify the sentiment of the word next to it are called boosters or intensifiers. Boosters can be classified into positive boosters  and negative boosters shown in Table No. I. Again we create a dictionary of the booster words from \cite{c16} along with their intensities from \cite{c1}. The positive boosters have positive intensities whereas negative boosters are assigned negative intensities.
+\begin{table}[h!]
+	\caption{Booster Words}
+	\begin{center}
+		\begin{tabular}{ |c|c| } 
+			
+			\hline
+			\textbf{Positive} & \textbf{Negative}  \\ 
+			\hline
+			\textit{absolutely} & \textit{badly}  \\ 
+			\hline
+			\textit{amazingly} & \textit{marginally}  \\ 
+			\hline
+			\textit{fabulously} & \textit{hardly}  \\ 
+			\hline
+			\textit{extremely} & \textit{scarcely}  \\ 
+			\hline
+			\textit{deeply} & \textit{somewhat}  \\ 
+			\hline
+		\end{tabular}	
+	\end{center}
+	
+\end{table}
+
+\subsubsection{Calculating the Sentiment Score}
+We adopt here the bigram approach to calculate the sentiment score of a sentence. Only those bigrams are selected that end with adjectives, nouns, adverbs(comparative or superlative) and verbs(present participle, past participle and past tense).
+\begin{algorithm}[h!]
+	\SetAlgoLined
+	\textbf{Input:} Preprocessed tweets (T)\\
+	\KwResult{Sentiment Score for each tweet }
+	neg=[``never'',``no'',``none'',``nope'', ``nor'',...]\\
+	booster=[``absolutely'',``amazingly'',``awfully'',...]\\
+	score=0.0\;
+	\ForEach{bigram($ {w_i} $ \textbf{,} $ {w_j} $ of t)}{
+		pos-tag($ {w_i} $ \textbf{,} $ {w_j} $)\;
+		\If{pos($ {w_j} $) is adjective,adverb,noun,verb}
+		{
+			\If{${w_i}$ is a booster word}
+			{ \If{${w_i}$ is +ve booster and polarity(${w_j}$) is +ve}{score+=intensity[booster]+polarity(${w_j}$)}
+				\If{${w_i}$ is +ve booster and polarity(${w_j}$) is -ve}{score+=polarity(${w_j}$)-intensity[booster]}
+				\If{${w_i}$ is -ve booster}{score+=polarity(${w_j}$)-intensity[booster]}
+				
+			}
+			\If{${w_i}$ is a negating word}
+			{score+=(-polarity($ {w_j} $))}
+			\Else{score+=polarity($ {w_i} $)+polarity($ {w_j} $)}	
+			
+		}
+		
+	}
+	
+	
+	\caption{Calculating the Sentiment Score}	
+\end{algorithm}
+
+
+Algorithm 2 depicts the procedure of bigram selection and sentiment calculation dealing along with negation and booster words.
+
+\section{EVALUATION AND RESULT}
+
+\subsection{Dataset}
+
+The datasets used for our study were of two different types on a particular domain. The first one being the newspaper articles from popular Indian newspapers relating to GST(Goods And Services Tax) . The second dataset comprised of the tweets that depict the public opinion on GST for the month of July, 2017.
+
+\subsubsection{News Corpora}
+
+The data was acquired from four popular Indian newspapers namely, The Economic Times \cite{c8}, The Hindu \cite{c9}, The Tribune \cite{c10} and The Statesman \cite{c11} from  1st July, 2017 (GST launch) till 31st August, 2017. The articles were scraped by using a popular Python library called Newspaper3k \cite{c7}. The total no. of news articles acquired on GST for two months(1st July, 2017 to 31st August, 2017) were 417.
+
+\subsubsection{Twitter Dataset}
+This dataset was created from Twitter, a popular social networking service where users post their messages and opinion called tweets.The tweets collected were based on GST which can depict the public sentiment after the launch of GST in India. The timeline of the collected tweets was from 1st July, 2017(GST launch) till 31st July, 2017.
+%\subsubsection{Neutral Words Dataset}
+\subsection{Evaluation}
+The domain-specific lexicon created from the news corpus was evaluated on the twitter dataset by using the sentiment measurer introduced in Section 3.2.4. The sentiment of each tweet was measured using both the domain-specific and SentiWordNet 3.0 lexicon to compare the difference between the intensities of the sentiment values by the two lexicon.
+
+\subsection{Result}
+\subsubsection{Comparison between SentiWordNet 3.0 and the proposed Domain Specific Lexicon}
+
+To clearly demonstrate the effectiveness of the proposed domain-specific lexicon, a case study is represented with some tweets and their sentiment scores calculated from SentiWorNet 3.0 and the proposed lexicon separately in Table No.II.
+
+\begin{table}[h]
+	\caption{Comparison of SentiWordNet and Domain-Specific Lexicon.}
+	\label{table_example}
+	%\begin{center}
+	\begin{tabular}{|L{3cm}|C{2cm}|R{1.5cm}|}
+		\hline
+		\begin{center}
+			\textbf{Tweets}
+		\end{center}&\begin{center}	\textbf{SentiWordNet}\end{center}&\begin{center}\textbf{Domain-Specific}\end{center} \\
+		\hline
+		U know u r abt to witness \#GST\_Mess when a common citizen is forced to pay 28\% \#GST on BANANAS. &0.625 & -0.125\\
+		\hline
+		Now, GST leaves homestays baffled . &0.0 & -0.12\\
+		\hline
+		New inspector raj threatens to cut short India's \#GST\ party, states may play spoilsport too" via @EconomicTimes. &0.0 &-0.05\\
+		\hline
+		\#GST\ implementation triggered widespread price \#inflation\. CM urged MPs to exert pressure on the Centre to protect the \#ConsumerRights\.  &0.0 &-0.116\\
+		\hline
+	\end{tabular}
+	%	\end{center}
+\end{table}
+
+\subsubsection{Performance of the proposed Domain Specific Lexicon and the Sentiment Intensity Calculator}
+The  reported measure of accuracy on the tweets by using the Domain Specific Lexicon are presented below in Table No.III.
+\begin{table}[h!]
+	\caption{Measure of Accuracy}
+	\label{table 2}
+	\begin{center}
+		\begin{tabular}{ r|c|c|c| }
+			\multicolumn{1}{r}{}
+			&  \multicolumn{1}{c}{\textbf{Positive}}
+			& \multicolumn{1}{c}{\textbf{Negative}} 
+			& \multicolumn{1}{c}{\textbf{Neutral}}\\
+			\cline{2-4}
+			\textbf{Precision} & 87\% & 87\% & 77\% \\
+			\cline{2-4}
+			\textbf{Recall} & 83\% & 83\%  & 90\% \\
+			\cline{2-4}
+			\textbf{F-Score} & 85\% & 85\%  & 83\% \\
+			\cline{2-4}
+		\end{tabular}
+	\end{center}
+	
+	
+\end{table}  \\
+
+Out of 190 tweets 160 of them were classified correctly as positive, negative or neutral. Hence, the measured overall accuracy was 84.21\%. 
+\subsubsection{Normalization of the Sentiment Scores}
+The extracted sentiment scores were needed to be normalized in order to scale the scores in the range[-1,1]. The normalization method adopted {\cite{c17}} is as follows:-
+\begin{equation}\label{Normalization of Sentiment Score}
+S_{n}(t)=\frac{s(t)-min_{s}}{max_{s}-min_{s}} 
+\end{equation}	
+The smallest score recorded among the range of calculated scores is \textbf{$ min_{s} $} wheras \textbf{$ max_{s} $} denotes the maximum score in that range. Hence, $ S_{n}$ gives the normalized value of the extracted sentiment score $ s $  of a tweet(t).
+
+\subsubsection{Sentiment Trend}
+Figure 2 depicts the sentiment trend of News articles and Tweets for the month of July on GST launch. The plot shows the change of mean sentiment scores throughout the month.
+
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{res1.png}
+	\caption{Sentiment Trend}
+\end{figure}
+
+
+\section{Conclusion}
+In this study we focused on the importance of domain-specific lexicon in sentiment analysis. We presented a method for building a domain-specific lexicon from the news corpora related to GST. Then for evaluation we chose tweets that depicts public mood on GST launch for the month of July. An algorithm was presented for analysing the sentiments. The algorithm efficiently handled negation and intensifiers which are responsible for manipulating the sentiment of a sentence. After evaluation we found that our lexicon outperformed SentiWordNet in a particular domain and improved the accuracy of sentiment classification in the selected domain. We demonstrated that for accurate  sentiment classification assigning scores to some domain-specific  words is very important or else the sentiment of that text would be misunderstood.
+
+
+
+\begin{thebibliography}{100}
+	\bibitem{c1}
+	Baccianella, Stefano and Esuli, Andrea and Sebastiani, Fabrizio. (2010). SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining.. Proceedings of LREC. 10.
+	
+	\bibitem{c2} 
+	Asghar, M., Ahmad, S., Qasim, M., Zahra, S. and Kundi, F. (2016). SentiHealth: creating health-related sentiment lexicon using hybrid approach. SpringerPlus, 5(1). 
+	
+	\bibitem{c3} 
+	Hamilton, W., Clark, K., Leskovec, J. and Jurafsky, D. (2016). Inducing Domain-Specific Sentiment Lexicons from Unlabeled Corpora. Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing.
+	
+	\bibitem{c4}
+	Almatarneh, S. and Gamallo, P. (2017). Automatic Construction of Domain-Specific Sentiment Lexicons for Polarity Classification. Advances in Intelligent Systems and Computing, pp.175-182.
+	
+	\bibitem{c5}
+	Georgios Paltoglou and Mike Thelwall. 2010. A study of information retrieval weighting schemes for sentiment analysis. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (ACL '10). Association for Computational Linguistics, Stroudsburg, PA, USA, 1386-1395.
+	\bibitem{c6}
+	Pak, A., Paroubek, P., Fraisse, A. and Francopoulo, G. (2014). Normalization of Term Weighting Scheme for Sentiment Analysis. Human Language Technology Challenges for Computer Science and Linguistics, pp.116-128. 
+	
+	\bibitem{c7} Ou-Yang, L. (2018). Newspaper3k: Article scraping \&\ curation — newspaper 0.0.2 documentation. Available at: http://newspaper.readthedocs.io/en/latest/
+	\bibitem{c8}
+	The Economic Times. Available at: https://economictimes.indiatimes.com/
+	\bibitem{c9}
+	The Hindu. (2018). Available at: http://www.thehindu.com/
+	\bibitem{c10}
+	The Tribune. Available at: http://www.tribuneindia.com /
+	
+	\bibitem{c11}
+	The Statesman. Available at: https://www.thestatesman.com/
+	\bibitem{c12} Chopra, D. (2016). Mastering natural language processing with python. Packt Publishing Limited.
+	\bibitem{c13} Kristina Toutanova, Dan Klein, Christopher Manning, and Yoram Singer. 2003. Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network. In Proceedings of HLT-NAACL 2003, pp. 252-259.
+	\bibitem{c14}Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews." 
+	Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle,     Washington, USA, 
+	\bibitem{c15}Bing Liu, Minqing Hu and Junsheng Cheng. "Opinion Observer: Analyzing 
+	and Comparing Opinions on the Web." Proceedings of the 14th 
+	International World Wide Web conference (WWW-2005), May 10-14,  2005, Chiba, Japan.
+	\bibitem{c16}Hutto, C.J. and Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on
+	Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
+	\bibitem{c17}Sarigiannidis, Antonios \& Karypidis, Paris-Alexandros \& Sarigiannidis, Panagiotis \& Pragidis, Ioannis. (2018). A Novel Lexicon-Based Approach in Determining Sentiment in Financial Data Using Learning Automata.
+	
+\end{thebibliography}
+
+
+\end{document}
