@@ -413,7 +413,7 @@ a	stamp	0	0
 a	acid	0	0.375
 n	lend	0.5	0.25
 a	entitle	0	0
-a	withdraw	0	0
+v	withdraw	0	0.375
 n	restless	0	0
 a	restless	0	0.75	
 v	hanging	0	0
@@ -433,7 +433,8 @@ a	outside	0	0
 n	style	0	0
 n	escalation	0	0
 n	metre	0	0
-n	concern	0.125	0.75
+n	concern	0	0
+v	concern	0	0
 n	purity	0	0
 v	signed	0	0
 n	excellence	0.625	0
@@ -561,8 +562,7 @@ n	automobile	0	0
 n	climber	0	0
 a	west	0	0
 n	excise	0	0
-a	slash	0	0
-n	slash	0	0
+n	slash	0.125	0
 v	slash	0.125	0	
 v	slashes	0.125	0
 n	bank	0	0
@@ -898,8 +898,8 @@ a	incentive	0	0
 n	space	0	0
 n	couple	0	0
 a	unlikely	0	0.5
-n	hike	0	0.25
-n	hikes	0	0.25
+n	hike	0	0
+v	hike	0	0
 a	ride	0	0
 a	economic	0	0
 n	hope	0.25	0
@@ -1003,7 +1003,7 @@ v	elaborate	0	0
 r	simultaneously	0	0
 a	admissible	0.625	0.5
 a	lathi	0	0
-a	critical	0	0.125
+a	critical	0.5	0
 n	ballet	0	0
 r	actually	0	0
 v	crossed	0	0
@@ -1973,7 +1973,8 @@ n	produce	0	0
 n	peoples	0	0
 v	exciting	0.375	0
 v	enabling	0	0
-a	worst	0.25	0.75
+v	dare	0.25	0
+a	worst	0	0.875
 n	respond	0	0
 n	opinion	0	0
 a	wrong	0.125	0.75
@@ -2270,7 +2271,9 @@ v	saying	0	0
 n	buoyancy	0.125	0.25
 v	desiccated	0.5	0.25
 a	seth	0	0
-n	break	0	0.125
+v	break	0	0.125
+n	break	0	0
+a	broke	0	0.375
 a	malaysian	0	0
 n	thank	0	0
 n	subscription	0	0
@@ -2788,7 +2791,7 @@ a	such	0	0.125
 a	stoke	0	0
 n	peep	0.125	0
 v	speed	0	0
-a	fear	0.125	0.75
+n	fear	0.125	0.75
 n	concentrate	0	0
 a	federal	0	0
 n	brand	0	0
@@ -2983,7 +2986,6 @@ n	feedback	0	0
 n	approval	0.625	0
 a	other	0.375	0.375
 n	parity	0.125	0.125
-v	dominated	0.25	0
 a	openness	0.375	0.25
 n	pass	0	0
 n	things	0	0
@@ -3109,6 +3111,7 @@ n	malik	0	0
 a	wash	0	0
 a	natural	0	0
 n	lead	0	0
+v	lead	0.25	0
 n	credits	0	0
 v	gather	0	0
 n	importance	0.75	0.125
@@ -3360,9 +3363,9 @@ n	capital	0	0
 n	pension	0	0
 a	constant	0.75	0.125
 a	european	0	0
-v	addressed	0.125	0
+a	addressed	0	0
 n	counter	0	0.5
-n	clarify	0	0
+v	clarify	0	0
 n	bronze	0	0
 n	steam	0	0
 n	spend	0	0
@@ -3511,7 +3514,7 @@ r	comfortably	0.125	0
 a	charitable	0.5	0.125
 n	freedom	0.125	0
 v	removed	0	0
-a	dominate	0	0
+v	dominate	0	0
 n	restrict	0	0
 n	necessity	0	0
 v	attract	0.625	0
@@ -3571,7 +3574,7 @@ n	test	0.125	0
 n	input	0	0
 n	notification	0	0
 n	series	0	0
-v	understand	0.375	0
+v	understand	0	0
 a	impose	0	0
 v	contracting	0	0.125
 n	mercantile	0	0
@@ -3648,7 +3651,8 @@ n	display	0	0
 n	cylinder	0	0
 v	matched	0.5	0
 n	march	0	0.125
-a	ready	0.5	0
+a	ready	0	0
+v	ready	0	0
 n	cascade	0	0
 n	jewelry	0	0
 n	barrel	0	0
@@ -3727,6 +3731,8 @@ a	canon	0	0
 n	settle	0	0
 n	vigil	0	0.125
 n	spending	0	0
+n	smile	0.125	0
+v	smile	0	0
 r	more	0	0
 a	comeback	0	0
 n	night	0	0
@@ -3758,7 +3764,7 @@ v	cracked	0	0.25
 n	shell	0	0
 n	rapid	0	0
 a	rapid	0.5	0
-v	hub	0	0
+n	hub	0	0
 a	own	0	0
 n	passage	0	0
 a	eastern	0	0
@@ -3782,7 +3788,7 @@ v	torment	0	0.125
 n	torment	0	0.5
 a	undone	0	0.25
 n	brilliance	0.625	0
-v	reinstate	0.25	0
+v	reinstate	0	0
 a	ridiculous	0	0.625
 n	debt	0	0
 a	unhindered	0	0.625
@@ -3911,7 +3917,6 @@ n	holiday	0	0
 a	accessible	0.625	0
 a	prospective	0	0
 n	boycott	0	0
-a	protest	0	0.03582397526189089
 a	crucial	0.375	0
 n	quite	0.25	0.25
 n	valuation	0	0
@@ -3986,7 +3991,6 @@ n	accounting	0	0
 r	soon	0	0
 r	forward	0	0
 n	talk	0	0
-n	t	0	0
 a	lucky	0.75	0
 n	legislation	0	0
 n	construction	0	0
@@ -3998,7 +4002,9 @@ n	card	0	0
 a	punish	0	0
 n	ask	0	0
 a	expected	0	0
-a	din	0	0.25
+a	showier	0	0.375
+n	din	0	0
+v	din	0	0
 n	intervention	0	0.125
 n	banking	0	0
 a	unique	0.5	0
@@ -4102,7 +4108,7 @@ n	finder	0	0
 a	secret	0	0
 a	quick	0.25	0.25
 n	slice	0	0
-n	job	0	0
+n	job	0.125	0
 n	entity	0	0
 a	tolerate	0	0.5
 n	numbers	0	0
@@ -4329,8 +4335,8 @@ n	chemist	0	0
 a	renewable	0.625	0
 a	smooth	0.25	0
 a	robust	0.375	0	
-n	demonetization	0	0.5
-n	demonetisation	0	0.5
+n	demonetization	0	0
+n	demonetisation	0	0
 v	inclined	0	0
 a	monish	0	0
 a	tend	0	0
@@ -4428,7 +4434,6 @@ r	alongside	0	0
 v	trying	0	0
 v	tied	0	0
 a	accompanied	0	0
-n	gd	0	0
 n	viability	0.25	0.125
 r	jointly	0	0
 v	wonder	0.125	0
@@ -4533,6 +4538,7 @@ a	cumbersome	0	0.125
 n 	bleeding	0	0
 a	muddled	0.125	0.125
 a	opportunistic	0.125	0
+a	old	0	0
 a	age-old	0	0.125
 n	communicating	0	0
 a	tested	0.625	0
@@ -4796,7 +4802,7 @@ a	affecting	0.5	0.125
 a	equipped	0.25	0
 a	confirming	0	0
 n	excess	0.125	0
-a	huge	0	0.125 
+a	huge	0.125	
 a	utilised	0	0
 a	utilized	0	0
 n	nightmare	0	0.25
@@ -4871,6 +4877,7 @@ n	lagging	0	0.06406558671939401
 n	losses	0	0.056756716379476095
 n	npa	0	0.10259867960905296
 n	obstacle	0	0.10259867960905296
+a	protest	0	0.10259867960905296
 n	plunge	0	0.06406558671939401
 v	plunge	0	0.06406558671939401
 n	punch	0	0.10259867960905296
